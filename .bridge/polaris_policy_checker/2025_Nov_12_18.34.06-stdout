@@ -1,0 +1,2 @@
+/Users/gonz/.blackduck/desktop/controller/installedtools/bridge/3.9.2/adapters/polaris-policy-checker/versions/0.2.81/polaris-policy-checker /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_policy_checker/data.json
+{"level":"warning","logger":"Polaris Policy Checker","msg":"Skipping policy violations check for \"SAST(sastFull)\" assessment with id \"cb9c02f0-8a5b-4499-8859-d30b1c88988e\", as the test is not completed","time":"2025-11-12 18:34:06.9604 CET"}

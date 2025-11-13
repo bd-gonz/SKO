@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE coverity SYSTEM "config.dtd">
+<coverity>
+
+<metrics>
+    <metric>
+        <name>time</name>
+        <value>5</value>
+    </metric>
+    <metric>
+        <name>args</name>
+        <value>/Users/gonz/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-build --dir /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/2025.9.0/idir -c /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/2025.9.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml --append-log --no-security-da --record-with-source --no-xrefs --enable-scan-transparency-data --bytecode-caching npm install</value>
+    </metric>
+    <metric>
+        <name>host</name>
+        <value>BD-MB02105</value>
+    </metric>
+    <metric>
+        <name>short-platform</name>
+        <value>macos-arm</value>
+    </metric>
+    <metric>
+        <name>platform</name>
+        <value>Darwin 24.6.0 arm64</value>
+    </metric>
+    <metric>
+        <name>ident</name>
+        <value>2025.9.0 (build 477d3c5ddd p-2025.9-push-57)</value>
+    </metric>
+    <metric>
+        <name>user</name>
+        <value>gonz</value>
+    </metric>
+    <metric>
+        <name>cwd</name>
+        <value>/Users/gonz/Code/VibeCoding/TicTaoToe/backend/node_modules/bcrypt</value>
+    </metric>
+    <metric>
+        <name>config</name>
+        <value>/Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/2025.9.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml</value>
+    </metric>
+    <metric>
+        <name>intermediatedir</name>
+        <value>/Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/2025.9.0/idir</value>
+    </metric>
+    <metric>
+        <name>outputdir</name>
+        <value>/Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/2025.9.0/idir/output</value>
+    </metric>
+    <metric>
+        <name>emitdir</name>
+        <value>/Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/2025.9.0/idir/emit</value>
+    </metric>
+    <metric>
+        <name>force</name>
+        <value>no</value>
+    </metric>
+    <metric>
+        <name>cygwin</name>
+        <value>no</value>
+    </metric>
+    <metric>
+        <name>failures</name>
+        <value>0</value>
+    </metric>
+    <metric>
+        <name>successes</name>
+        <value>0</value>
+    </metric>
+    <metric>
+        <name>recoverable-errors</name>
+        <value>0</value>
+    </metric>
+    <metric>
+        <name>dotnet-webapps-detected</name>
+        <value>0</value>
+    </metric>
+    <metric>
+        <name>dotnet-webapp-successes</name>
+        <value>0</value>
+    </metric>
+    <metric>
+        <name>dotnet-webapp-compilation-secs</name>
+        <value>0</value>
+    </metric>
+    <metric>
+        <name>security-da-ms</name>
+        <value>0</value>
+    </metric>
+    <metric>
+        <name>buildcmd</name>
+        <value>npm install</value>
+    </metric>
+</metrics>
+</coverity>

@@ -1,0 +1,3 @@
+/Users/gonz/.blackduck/desktop/controller/installedtools/bridge/3.9.2/adapters/polaris-issues-fetcher/versions/0.2.83/polaris-issues-fetcher /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_issues_fetcher/data.json
+{"level":"info","logger":"Polaris Issues Fetcher","msg":"Fetching issues for \"SAST(sastFull)\" assessment","time":"2025-11-12 18:36:09.8082 CET"}
+{"level":"info","logger":"Polaris Issues Fetcher","msg":"Successfully fetched issues for assessment type \"SAST(sastFull)\" with id \"db75e93b-a4b8-4e86-a883-e608ab64c65c\"\n {\n \"critical\": 0,\n \"high\": 1,\n \"informational\": 0,\n \"low\": 8,\n \"medium\": 0\n}\n","time":"2025-11-12 18:36:10.4209 CET"}

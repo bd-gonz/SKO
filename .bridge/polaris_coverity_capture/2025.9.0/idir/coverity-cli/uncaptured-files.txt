@@ -1,0 +1,3 @@
+/Users/gonz/Code/VibeCoding/TicTaoToe/backend/node_modules/bcrypt/src/bcrypt.cc
+/Users/gonz/Code/VibeCoding/TicTaoToe/backend/node_modules/bcrypt/src/bcrypt_node.cc
+/Users/gonz/Code/VibeCoding/TicTaoToe/backend/node_modules/bcrypt/src/blowfish.cc

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="title">🎮 Advanced Tic Tac Toe</h1>
+            <div class="user-section" id="user-section">
+                <div class="user-info" id="user-info" style="display: none;">
+                    <span class="welcome-text">Welcome, <span id="current-user-name"></span>!</span>
+                    <button id="logout-btn" class="user-btn">Logout</button>
+                    <button id="view-stats-btn" class="user-btn">My Stats</button>
+                </div>
+                <div class="auth-buttons" id="auth-buttons">
+                    <button id="login-btn" class="user-btn">Login</button>
+                    <button id="register-btn" class="user-btn">Register</button>
+                </div>
+            </div>
+        </header>
+        
+        <!-- User Authentication Modal -->
+        <div class="auth-modal" id="auth-modal">
+            <div class="auth-content">
+                <span class="close-auth" id="close-auth">&times;</span>
+                <h2 id="auth-title">Login</h2>
+                <form id="auth-form">
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required minlength="3" maxlength="20">
+                    </div>
+                    <div class="form-group" id="email-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required minlength="6">
+                    </div>
+                    <div class="form-group" id="confirm-password-group" style="display: none;">
+                        <label for="confirm-password">Confirm Password:</label>
+                        <input type="password" id="confirm-password" name="confirm-password" minlength="6">
+                    </div>
+                    <button type="submit" id="auth-submit" class="auth-submit-btn">Login</button>
+                </form>
+                <p class="auth-switch">
+                    <span id="auth-switch-text">Don't have an account?</span>
+                    <a href="#" id="auth-switch-link">Register here</a>
+                </p>
+            </div>
+        </div>
+        
+        <!-- User Stats Modal -->
+        <div class="stats-modal" id="stats-modal">
+            <div class="stats-content">
+                <span class="close-stats" id="close-stats">&times;</span>
+                <h2>Player Statistics</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>Games Played</h3>
+                        <span class="stat-value" id="total-games">0</span>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Games Won</h3>
+                        <span class="stat-value" id="total-wins">0</span>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Win Rate</h3>
+                        <span class="stat-value" id="win-rate">0%</span>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Best Streak</h3>
+                        <span class="stat-value" id="best-streak">0</span>
+                    </div>
+                    <div class="stat-card">
+                        <h3>vs Easy AI</h3>
+                        <span class="stat-value" id="easy-wins">0/0</span>
+                    </div>
+                    <div class="stat-card">
+                        <h3>vs Medium AI</h3>
+                        <span class="stat-value" id="medium-wins">0/0</span>
+                    </div>
+                    <div class="stat-card">
+                        <h3>vs Hard AI</h3>
+                        <span class="stat-value" id="hard-wins">0/0</span>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Total Playtime</h3>
+                        <span class="stat-value" id="total-playtime">0m</span>
+                    </div>
+                </div>
+                <button id="reset-stats-btn" class="reset-stats-btn">Reset Statistics</button>
+            </div>
+        </div>
+        
+        <div class="game-setup">
+            <div class="mode-selection">
+                <h3>Game Mode</h3>
+                <div class="mode-buttons">
+                    <button id="human-vs-computer" class="mode-btn active">Human vs Computer</button>
+                    <button id="computer-vs-computer" class="mode-btn">Computer vs Computer</button>
+                </div>
+            </div>
+            
+            <div class="difficulty-selection">
+                <h3>Difficulty</h3>
+                <div class="difficulty-buttons">
+                    <button id="easy" class="difficulty-btn">Easy</button>
+                    <button id="medium" class="difficulty-btn active">Medium</button>
+                    <button id="hard" class="difficulty-btn">Hard</button>
+                </div>
+            </div>
+            
+            <button id="start-game" class="start-btn">Start Game</button>
+        </div>
+        
+        <div class="game-area" style="display: none;">
+            <div class="game-info">
+                <div class="current-player">
+                    <span id="player-indicator">Player X's Turn</span>
+                </div>
+                <div class="score-board">
+                    <div class="score">
+                        <span class="label">X Wins:</span>
+                        <span id="x-score">0</span>
+                    </div>
+                    <div class="score">
+                        <span class="label">O Wins:</span>
+                        <span id="o-score">0</span>
+                    </div>
+                    <div class="score">
+                        <span class="label">Draws:</span>
+                        <span id="draw-score">0</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="board-container">
+                <div id="game-board" class="board">
+                    <div class="cell" data-index="0"></div>
+                    <div class="cell" data-index="1"></div>
+                    <div class="cell" data-index="2"></div>
+                    <div class="cell" data-index="3"></div>
+                    <div class="cell" data-index="4"></div>
+                    <div class="cell" data-index="5"></div>
+                    <div class="cell" data-index="6"></div>
+                    <div class="cell" data-index="7"></div>
+                    <div class="cell" data-index="8"></div>
+                </div>
+                <div class="winning-line"></div>
+            </div>
+            
+            <div class="game-controls">
+                <button id="reset-game" class="control-btn">Reset Game</button>
+                <button id="new-game" class="control-btn">New Game</button>
+            </div>
+        </div>
+        
+        <div class="game-result" id="game-result">
+            <div class="result-content">
+                <h2 id="result-text"></h2>
+                <div class="result-animation">
+                    <div class="confetti"></div>
+                </div>
+                <button id="play-again" class="play-again-btn">Play Again</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="api.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

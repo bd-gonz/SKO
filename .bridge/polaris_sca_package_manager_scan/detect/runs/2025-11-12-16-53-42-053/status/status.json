@@ -1,0 +1,59 @@
+{
+  "formatVersion": "0.5.0",
+  "detectVersion": "10.4.0",
+  "projectName": "TicTaoToe",
+  "projectVersion": "Default Detect Version",
+  "detectors": [],
+  "status": [],
+  "issues": [
+    {
+      "type": "EXCEPTION",
+      "title": "Generating Component Location Analysis File for All Components",
+      "messages": [
+        "Failed to generate Component Location Analysis file."
+      ]
+    }
+  ],
+  "overallStatus": [
+    {
+      "key": "SUCCESS",
+      "status": "Detect exited successfully."
+    }
+  ],
+  "results": [],
+  "unrecognizedPaths": {},
+  "codeLocations": [],
+  "propertyValues": {
+    "blackduck.offline.mode": "true",
+    "blackduck.offline.mode.force.bdio": "true",
+    "detect.bdio.file.name": "scan",
+    "detect.bdio.output.path": "/Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_sca_package_manager_scan/detect/bdio/blackduck_artifact",
+    "detect.cleanup": "false",
+    "detect.component.location.analysis.enabled": "true",
+    "detect.excluded.directories": "/Users/gonz/Code/VibeCoding/TicTaoToe/.bridge",
+    "detect.maven.path": "/Users/gonz/Library/CloudStorage/OneDrive-BlackDuckSoftware/Documents/apache-maven-3.9.9/bin/mvn",
+    "detect.npm.path": "/opt/homebrew/lib/node_modules/npm/bin/npm-cli.js",
+    "detect.output.path": "/Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_sca_package_manager_scan/detect",
+    "detect.tools": "DETECTOR"
+  },
+  "operations": [
+    {
+      "startTimestamp": "2025-11-12 16:53:42.265",
+      "endTimestamp": "2025-11-12 16:53:42.337",
+      "descriptionKey": "Execute Detectors",
+      "status": "SUCCESS"
+    },
+    {
+      "startTimestamp": "2025-11-12 16:53:42.338",
+      "endTimestamp": "2025-11-12 16:53:42.339",
+      "descriptionKey": "SubProject Aggregate",
+      "status": "SUCCESS"
+    },
+    {
+      "startTimestamp": "2025-11-12 16:53:42.389",
+      "endTimestamp": "2025-11-12 16:53:42.390",
+      "descriptionKey": "Generating Component Location Analysis File for All Components",
+      "status": "FAILURE"
+    }
+  ]
+}

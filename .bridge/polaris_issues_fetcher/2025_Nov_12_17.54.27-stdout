@@ -1,0 +1,4 @@
+/Users/gonz/.blackduck/desktop/controller/installedtools/bridge/3.9.2/adapters/polaris-issues-fetcher/versions/0.2.83/polaris-issues-fetcher /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_issues_fetcher/data.json
+{"level":"warning","logger":"Polaris Issues Fetcher","msg":"Will not fetch issues for \"SAST(sastFull)\" assessment, as the test is not completed","time":"2025-11-12 17:54:27.9021 CET"}
+{"level":"info","logger":"Polaris Issues Fetcher","msg":"Fetching issues for \"SCA(scaPackage)\" assessment","time":"2025-11-12 17:54:27.9023 CET"}
+{"level":"info","logger":"Polaris Issues Fetcher","msg":"Successfully fetched issues for assessment type \"SCA(scaPackage)\" with id \"89dd5ce9-4e5d-456d-935b-be27be5d8774\"\n {\n \"critical\": 0,\n \"high\": 0,\n \"informational\": 0,\n \"low\": 0,\n \"medium\": 0\n}\n","time":"2025-11-12 17:54:28.5642 CET"}

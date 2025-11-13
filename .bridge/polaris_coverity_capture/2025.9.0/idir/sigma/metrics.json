@@ -1,0 +1,46 @@
+{
+  "V1": {
+    "file_metrics": {
+      "files_discovered": 7772,
+      "files_analyzed": 25,
+      "skipped_files_code_exclusion": 7712,
+      "skipped_files_scm_ignored": 0,
+      "skipped_files_too_large": 0,
+      "skipped_files_others": 35,
+      "files_by_language": {
+        "HTML": 2,
+        "JSON": 3,
+        "Markdown": 4,
+        "Shell": 1,
+        "YAML": 1,
+        "Dotenv": 2,
+        "JavaScript": 10,
+        "CSS": 2
+      }
+    },
+    "defect_metrics": {
+      "cors_origin_string": {
+        "Low": 1
+      },
+      "cors_configured_globally": {
+        "Low": 1
+      },
+      "excessive_token_lifetime": {
+        "Low": 2
+      },
+      "hardcoded_secret": {
+        "Medium": 4
+      },
+      "sqli": {
+        "High": 2
+      },
+      "verbose_server_banner": {
+        "Low": 1
+      }
+    },
+    "performance": {
+      "total_duration_microseconds": 933489.0,
+      "total_duration": "1 second"
+    }
+  }
+}

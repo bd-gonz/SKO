@@ -1,0 +1,85 @@
+/Users/gonz/.blackduck/desktop/controller/installedtools/bridge/3.9.2/adapters/detect-execution/versions/0.2.150/detect-execution package /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_sca_package_manager_scan/data.json
+{"level":"info","logger":"Detect Execution","msg":"Running command java -jar /Users/gonz/.blackduck/bridge/tools/blackduck-detect/10.4.0/detect-10.4.0.jar --detect.cleanup=false --detect.bdio.file.name=scan --detect.bdio.output.path=/Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_sca_package_manager_scan/detect/bdio/blackduck_artifact --detect.output.path=/Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_sca_package_manager_scan/detect --detect.tools=DETECTOR --detect.component.location.analysis.enabled=true --blackduck.offline.mode=true --blackduck.offline.mode.force.bdio=true","time":"2025-11-12 17:53:41.1178 CET"}
+{"external_parsed":true,"extras":["main"],"level":"warning","logger":"Detect Execution","msg":"--- Detect-Self-Updater:  Self-Update feature is disabled because of the following reasons:","time":"2025-11-12 17:53:41.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"warning","logger":"Detect Execution","msg":"--- Detect-Self-Updater:  Detect in offline mode is incompatible with the Self-Update feature.","time":"2025-11-12 17:53:41.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"warning","logger":"Detect Execution","msg":"--- Detect-Self-Updater:  Black Duck URL is required for the Self-Update feature.","time":"2025-11-12 17:53:41.0000 CET"}
+{"external_parsed":true,"level":"info","logger":"Detect Execution","msg":"______     _            _","time":"2025-11-12 17:53:41.9939 CET"}
+{"external_parsed":true,"level":"info","logger":"Detect Execution","msg":"|  _  \\   | |          | |","time":"2025-11-12 17:53:41.9940 CET"}
+{"external_parsed":true,"level":"info","logger":"Detect Execution","msg":"| | | |___| |_ ___  ___| |_","time":"2025-11-12 17:53:41.9940 CET"}
+{"external_parsed":true,"level":"info","logger":"Detect Execution","msg":"| | | / _ \\ __/ _ \\/ __| __|","time":"2025-11-12 17:53:41.9940 CET"}
+{"external_parsed":true,"level":"info","logger":"Detect Execution","msg":"| |/ /  __/ ||  __/ (__| |_","time":"2025-11-12 17:53:41.9940 CET"}
+{"external_parsed":true,"level":"info","logger":"Detect Execution","msg":"|___/ \\___|\\__\\___|\\___|\\__|","time":"2025-11-12 17:53:41.9940 CET"}
+{"external_parsed":true,"level":"info","logger":"Detect Execution","msg":"","time":"2025-11-12 17:53:41.9941 CET"}
+{"external_parsed":true,"level":"info","logger":"Detect Execution","msg":"","time":"2025-11-12 17:53:42.0805 CET"}
+{"external_parsed":true,"level":"info","logger":"Detect Execution","msg":"Detect Version: 10.4.0","time":"2025-11-12 17:53:42.0805 CET"}
+{"external_parsed":true,"level":"info","logger":"Detect Execution","msg":"","time":"2025-11-12 17:53:42.0805 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- ","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- Current property values:","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- --property = value [notes]","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- ------------------------------------------------------------","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- blackduck.offline.mode = true [cmd] ","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- blackduck.offline.mode.force.bdio = true [cmd] ","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- detect.bdio.file.name = scan [cmd] ","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- detect.bdio.output.path = /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_sca_package_manager_scan/detect/bdio/blackduck_artifact [cmd] ","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- detect.cleanup = false [cmd] ","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- detect.component.location.analysis.enabled = true [cmd] ","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- detect.excluded.directories = /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge [env] ","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- detect.maven.path = /Users/gonz/Library/CloudStorage/OneDrive-BlackDuckSoftware/Documents/apache-maven-3.9.9/bin/mvn [env] ","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- detect.npm.path = /opt/homebrew/lib/node_modules/npm/bin/npm-cli.js [env] ","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- detect.output.path = /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_sca_package_manager_scan/detect [cmd] ","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- detect.tools = DETECTOR [cmd] ","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- ------------------------------------------------------------","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- ","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- Detect build date: 2025-04-24","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- Source directory: /Users/gonz/Code/VibeCoding/TicTaoToe","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- Output directory: /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_sca_package_manager_scan/detect","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- Run directory: /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_sca_package_manager_scan/detect/runs/2025-11-12-16-53-42-053","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- ","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"warning","logger":"Detect Execution","msg":"--- Correlated Scanning is not available for Rapid/Stateless scan mode or offline scanning. A correlation ID will not be set.","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- ----------------------------------","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- Docker tool will not be run.","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- ----------------------------------","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- Bazel tool will not be run.","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- ----------------------------------","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- Will include the Detectors tool.","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- Searching for detectors.","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- Evaluating detectors. This may take a while.","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- ======================================================================================================","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- Detector Report","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- ======================================================================================================","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- No detectors found.","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- ----------------------------------","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- Detectors actions finished.","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- ----------------------------------","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- Project name: TicTaoToe","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- Project version: Default Detect Version","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- ----------------------------------","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- Signature Scanner tool will not be run.","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- ----------------------------------","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- Vulnerability Impact Analysis tool will not be run.","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- ----------------------------------","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- IaC Scanner tool will not be run.","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- ----------------------------------","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- Component Location Analysis requires non-empty BDIO results. Skipping location analysis.","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- ----------------------------------","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- ","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- ","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- Creating status file: /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_sca_package_manager_scan/detect/runs/2025-11-12-16-53-42-053/status/status.json","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- ","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- Skipping cleanup, it is disabled.","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- ","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- ","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- ======== Detect Issues ========","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- ","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- EXCEPTIONS:","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- \tGenerating Component Location Analysis File for All Components","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- \t\tFailed to generate Component Location Analysis file.","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- ","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- ======== Detect Status ========","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- ","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- Overall Status: SUCCESS - Detect exited successfully.","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- ","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- ===============================","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- ","time":"2025-11-12 17:53:42.0000 CET"}
+{"external_parsed":true,"extras":["main"],"level":"info","logger":"Detect Execution","msg":"--- Detect duration: 00h 00m 00s 931ms","time":"2025-11-12 17:53:42.0000 CET"}
+{"level":"warning","logger":"Detect Execution","msg":"components-with-locations.json file not found, will upload only BDIO file.","time":"2025-11-12 17:53:42.4317 CET"}

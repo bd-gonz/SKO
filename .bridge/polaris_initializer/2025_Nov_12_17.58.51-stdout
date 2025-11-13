@@ -1,0 +1,2 @@
+/Users/gonz/.blackduck/desktop/controller/installedtools/bridge/3.9.2/adapters/polaris-initializer/versions/1.0.174/polaris-initializer /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_initializer/data.json
+{"level":"info","logger":"Polaris Initializer","msg":"Successfully created test for \"SAST(sastFull)\" assessment. The short test ID is \"AJ14D1Q\"","time":"2025-11-12 17:58:53.7549 CET"}

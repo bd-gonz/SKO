@@ -1,0 +1,5 @@
+/Users/gonz/.blackduck/desktop/controller/installedtools/bridge/3.9.2/adapters/polaris-waiter/versions/0.2.88/polaris-waiter /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_waiter/data.json
+{"level":"info","logger":"Polaris Waiter","msg":"Waiting for test with assessment type \"SAST(sastFull)\" and id \"db75e93b-a4b8-4e86-a883-e608ab64c65c\"","time":"2025-11-12 18:35:48.0004 CET"}
+{"level":"info","logger":"Polaris Waiter","msg":"Polling Test Manager: state of test with assessment type \"SAST(sastFull)\" and id \"db75e93b-a4b8-4e86-a883-e608ab64c65c\" is \"Waiting for Capture\"","time":"2025-11-12 18:35:48.5436 CET"}
+{"level":"info","logger":"Polaris Waiter","msg":"Polling Test Manager: state of test with assessment type \"SAST(sastFull)\" and id \"db75e93b-a4b8-4e86-a883-e608ab64c65c\" is \"Scanning\"","time":"2025-11-12 18:35:58.7894 CET"}
+{"level":"info","logger":"Polaris Waiter","msg":"test with assessment type \"SAST(sastFull)\" and id \"db75e93b-a4b8-4e86-a883-e608ab64c65c\" completed successfully","time":"2025-11-12 18:36:09.0459 CET"}

@@ -1,0 +1,378 @@
+{
+  "type": "Coverity CLI Diagnostics Data",
+  "version": 1,
+  "general": {
+    "coverity-static-analysis-version": "2025.9.0"
+  },
+  "capture": {
+    "primary-capture-mode": "Build",
+    "command-line": "/Users/gonz/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/coverity capture --dir /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/2025.9.0/idir -o analyze.location=connect -- npm install",
+    "working-directory": "/Users/gonz/Code/VibeCoding/TicTaoToe",
+    "project-directory": "/Users/gonz/Code/VibeCoding/TicTaoToe",
+    "intermediate-directory": "/Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/2025.9.0/idir",
+    "configuration-file-path": "/Users/gonz/Code/VibeCoding/TicTaoToe/coverity.yaml",
+    "configuration": {
+      "command-line-overrides": [
+        "--config-override",
+        "analyze.location=connect",
+        "--",
+        "npm",
+        "install"
+      ],
+      "file-configuration": {
+        "capture": {
+          "build": {
+            "build-command": "npm build",
+            "clean-command": "npm clean"
+          }
+        },
+        "commit": null
+      },
+      "effective-configuration": {
+        "capture": {
+          "build": {
+            "build-command": "npm install",
+            "clean-command": "npm clean"
+          }
+        },
+        "analyze": {
+          "location": "connect"
+        },
+        "commit": null,
+        "caching": {
+          "bytecode": true,
+          "tu": false,
+          "wur": true
+        }
+      },
+      "configuration-hash": "f454380db8741680c87c697653eea747d403b4e3e6c5411ac059f9fdd142b285"
+    },
+    "capture-summary": {
+      "files-captured": 26,
+      "lines-of-code": 6912,
+      "succeeded": 26
+    },
+    "capture-rate": 100,
+    "command-info": [
+      {
+        "command-line": "/Users/gonz/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-manage-emit --dir /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/2025.9.0/idir check-compatible",
+        "cwd": "/Users/gonz/Code/VibeCoding/TicTaoToe",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/var/folders/q4/7hthhtjs1tnbj65766xh6cm40000gp/T/polaris_coverity_cache3519011297/.authKey",
+          "COVERITY_CACHE_KEY": "5f132b58-8c8c-4ff0-a09f-1097630e2f11",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/Users/gonz/.blackduck/bridge/tools/sigma/2025.10.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/Users/gonz/.local/bin:/Applications/cov-analysis-macosx-2025.6.2/bin/:/Applications/bridge-cli_3.7.1/:/Users/gonz/Documents/apache-maven-3.9.9/bin:/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Applications/VMware Fusion.app/Contents/Public"
+        },
+        "stdout-tail": [
+          "Intermediate directory /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/2025.9.0/idir is compatible"
+        ],
+        "start-time": "2025-11-12T18:44:36.943222+01:00",
+        "end-time": "2025-11-12T18:44:36.965906+01:00",
+        "duration": 22683375
+      },
+      {
+        "command-line": "/Users/gonz/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-manage-emit --dir /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/2025.9.0/idir reset-host-name",
+        "cwd": "/Users/gonz/Code/VibeCoding/TicTaoToe",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/var/folders/q4/7hthhtjs1tnbj65766xh6cm40000gp/T/polaris_coverity_cache3519011297/.authKey",
+          "COVERITY_CACHE_KEY": "5f132b58-8c8c-4ff0-a09f-1097630e2f11",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/Users/gonz/.blackduck/bridge/tools/sigma/2025.10.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/Users/gonz/.local/bin:/Applications/cov-analysis-macosx-2025.6.2/bin/:/Applications/bridge-cli_3.7.1/:/Users/gonz/Documents/apache-maven-3.9.9/bin:/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Applications/VMware Fusion.app/Contents/Public"
+        },
+        "start-time": "2025-11-12T18:44:36.899003+01:00",
+        "end-time": "2025-11-12T18:44:36.943103+01:00",
+        "duration": 44098917
+      },
+      {
+        "command-line": "/Users/gonz/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-internal-manage-cache check",
+        "cwd": "/Users/gonz/Code/VibeCoding/TicTaoToe",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/var/folders/q4/7hthhtjs1tnbj65766xh6cm40000gp/T/polaris_coverity_cache3519011297/.authKey",
+          "COVERITY_CACHE_KEY": "5f132b58-8c8c-4ff0-a09f-1097630e2f11",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/Users/gonz/.blackduck/bridge/tools/sigma/2025.10.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/Users/gonz/.local/bin:/Applications/cov-analysis-macosx-2025.6.2/bin/:/Applications/bridge-cli_3.7.1/:/Users/gonz/Documents/apache-maven-3.9.9/bin:/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Applications/VMware Fusion.app/Contents/Public"
+        },
+        "start-time": "2025-11-12T18:44:36.967255+01:00",
+        "end-time": "2025-11-12T18:44:37.576623+01:00",
+        "duration": 609356708
+      },
+      {
+        "command-line": "/Users/gonz/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-manage-emit --dir /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/2025.9.0/idir list-capture-diagnostics",
+        "cwd": "/Users/gonz/Code/VibeCoding/TicTaoToe",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/var/folders/q4/7hthhtjs1tnbj65766xh6cm40000gp/T/polaris_coverity_cache3519011297/.authKey",
+          "COVERITY_CACHE_KEY": "5f132b58-8c8c-4ff0-a09f-1097630e2f11",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/Users/gonz/.blackduck/bridge/tools/sigma/2025.10.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/Users/gonz/.local/bin:/Applications/cov-analysis-macosx-2025.6.2/bin/:/Applications/bridge-cli_3.7.1/:/Users/gonz/Documents/apache-maven-3.9.9/bin:/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Applications/VMware Fusion.app/Contents/Public"
+        },
+        "stdout-tail": [
+          "        \"id\" : 38,",
+          "        \"source-language\" : \"Text data\",",
+          "        \"capture-percentage\" : 100,",
+          "        \"had-failures\" : false,",
+          "        \"had-recoverable-errors\" : false,",
+          "        \"had-abstract-syntax-trees\" : false",
+          "      }",
+          "    }",
+          "  ]",
+          "}"
+        ],
+        "start-time": "2025-11-12T18:44:37.694152+01:00",
+        "end-time": "2025-11-12T18:44:37.712154+01:00",
+        "duration": 18002292
+      },
+      {
+        "command-line": "sh -c npm clean",
+        "cwd": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/node_modules/bcrypt",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/var/folders/q4/7hthhtjs1tnbj65766xh6cm40000gp/T/polaris_coverity_cache3519011297/.authKey",
+          "COVERITY_CACHE_KEY": "5f132b58-8c8c-4ff0-a09f-1097630e2f11",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/Users/gonz/.blackduck/bridge/tools/sigma/2025.10.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/Users/gonz/.local/bin:/Applications/cov-analysis-macosx-2025.6.2/bin/:/Applications/bridge-cli_3.7.1/:/Users/gonz/Documents/apache-maven-3.9.9/bin:/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Applications/VMware Fusion.app/Contents/Public"
+        },
+        "exit-code": 1,
+        "stdout-tail": [
+          "Unknown command: \"clean\"",
+          "",
+          "To see a list of supported npm commands, run:",
+          "  npm help"
+        ],
+        "start-time": "2025-11-12T18:44:38.065844+01:00",
+        "end-time": "2025-11-12T18:44:38.275724+01:00",
+        "duration": 209875917
+      },
+      {
+        "command-line": "/Users/gonz/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-build --dir /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/2025.9.0/idir -c /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/2025.9.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml --append-log --no-security-da --record-with-source --no-xrefs --enable-scan-transparency-data --bytecode-caching npm install",
+        "cwd": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/node_modules/bcrypt",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/var/folders/q4/7hthhtjs1tnbj65766xh6cm40000gp/T/polaris_coverity_cache3519011297/.authKey",
+          "COVERITY_CACHE_KEY": "5f132b58-8c8c-4ff0-a09f-1097630e2f11",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/Users/gonz/.blackduck/bridge/tools/sigma/2025.10.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/Users/gonz/.local/bin:/Applications/cov-analysis-macosx-2025.6.2/bin/:/Applications/bridge-cli_3.7.1/:/Users/gonz/Documents/apache-maven-3.9.9/bin:/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Applications/VMware Fusion.app/Contents/Public"
+        },
+        "stdout-tail": [
+          "up to date, audited 308 packages in 2s",
+          "",
+          "35 packages are looking for funding",
+          "  run `npm fund` for details",
+          "",
+          "found 0 vulnerabilities",
+          "Attempting to detect unconfigured compilers in build",
+          "|0----------25-----------50----------75---------100|",
+          "****************************************************",
+          "The cov-build utility completed successfully."
+        ],
+        "stderr-tail": [
+          "node-pre-gyp info it worked if it ends with ok",
+          "node-pre-gyp info using node-pre-gyp@1.0.11",
+          "node-pre-gyp info using node@24.4.1 | darwin | arm64",
+          "node-pre-gyp info ok "
+        ],
+        "start-time": "2025-11-12T18:44:38.275841+01:00",
+        "end-time": "2025-11-12T18:44:43.991308+01:00",
+        "duration": 5715372542,
+        "meta": {
+          "build-metrics": {
+            "args": "/Users/gonz/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-build --dir /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/2025.9.0/idir -c /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/2025.9.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml --append-log --no-security-da --record-with-source --no-xrefs --enable-scan-transparency-data --bytecode-caching npm install",
+            "buildcmd": "npm install",
+            "config": "/Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/2025.9.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml",
+            "cwd": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/node_modules/bcrypt",
+            "cygwin": "no",
+            "dotnet-webapp-compilation-secs": "0",
+            "dotnet-webapp-successes": "0",
+            "dotnet-webapps-detected": "0",
+            "emitdir": "/Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/2025.9.0/idir/emit",
+            "failures": "0",
+            "force": "no",
+            "host": "BD-MB02105",
+            "ident": "2025.9.0 (build 477d3c5ddd p-2025.9-push-57)",
+            "intermediatedir": "/Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/2025.9.0/idir",
+            "outputdir": "/Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/2025.9.0/idir/output",
+            "platform": "Darwin 24.6.0 arm64",
+            "recoverable-errors": "0",
+            "security-da-ms": "0",
+            "short-platform": "macos-arm",
+            "successes": "0",
+            "time": "5",
+            "user": "gonz"
+          }
+        }
+      },
+      {
+        "command-line": "/Users/gonz/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-manage-emit --dir /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/2025.9.0/idir list-capture-diagnostics",
+        "cwd": "/Users/gonz/Code/VibeCoding/TicTaoToe",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/var/folders/q4/7hthhtjs1tnbj65766xh6cm40000gp/T/polaris_coverity_cache3519011297/.authKey",
+          "COVERITY_CACHE_KEY": "5f132b58-8c8c-4ff0-a09f-1097630e2f11",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/Users/gonz/.blackduck/bridge/tools/sigma/2025.10.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/Users/gonz/.local/bin:/Applications/cov-analysis-macosx-2025.6.2/bin/:/Applications/bridge-cli_3.7.1/:/Users/gonz/Documents/apache-maven-3.9.9/bin:/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Applications/VMware Fusion.app/Contents/Public"
+        },
+        "stdout-tail": [
+          "        \"id\" : 38,",
+          "        \"source-language\" : \"Text data\",",
+          "        \"capture-percentage\" : 100,",
+          "        \"had-failures\" : false,",
+          "        \"had-recoverable-errors\" : false,",
+          "        \"had-abstract-syntax-trees\" : false",
+          "      }",
+          "    }",
+          "  ]",
+          "}"
+        ],
+        "start-time": "2025-11-12T18:44:43.9917+01:00",
+        "end-time": "2025-11-12T18:44:44.007336+01:00",
+        "duration": 15635666
+      },
+      {
+        "command-line": "/Users/gonz/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-internal-capture-files --dir /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/2025.9.0/idir -c /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/2025.9.0/idir/coverity-cli/buildless-compiler-configs/coverity_config.xml --ticker-mode none --append-log --capture-list-file /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/2025.9.0/idir/coverity-cli/capture-file-list-2225017015 --record-with-source",
+        "cwd": "/Users/gonz/Code/VibeCoding/TicTaoToe",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/var/folders/q4/7hthhtjs1tnbj65766xh6cm40000gp/T/polaris_coverity_cache3519011297/.authKey",
+          "COVERITY_CACHE_KEY": "5f132b58-8c8c-4ff0-a09f-1097630e2f11",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/Users/gonz/.blackduck/bridge/tools/sigma/2025.10.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/Users/gonz/.local/bin:/Applications/cov-analysis-macosx-2025.6.2/bin/:/Applications/bridge-cli_3.7.1/:/Users/gonz/Documents/apache-maven-3.9.9/bin:/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Applications/VMware Fusion.app/Contents/Public"
+        },
+        "stdout-tail": [
+          "[INFO] Buildless capture started.",
+          "[INFO] Emitting 22 Files.",
+          "[INFO] Buildless capture completed."
+        ],
+        "start-time": "2025-11-12T18:44:44.124189+01:00",
+        "end-time": "2025-11-12T18:44:44.280215+01:00",
+        "duration": 156023417
+      },
+      {
+        "command-line": "/Users/gonz/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-manage-emit @@/Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/2025.9.0/idir/coverity-cli/delete-unwanted-tus-action-1899324709",
+        "cwd": "/Users/gonz/Code/VibeCoding/TicTaoToe",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/var/folders/q4/7hthhtjs1tnbj65766xh6cm40000gp/T/polaris_coverity_cache3519011297/.authKey",
+          "COVERITY_CACHE_KEY": "5f132b58-8c8c-4ff0-a09f-1097630e2f11",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/Users/gonz/.blackduck/bridge/tools/sigma/2025.10.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/Users/gonz/.local/bin:/Applications/cov-analysis-macosx-2025.6.2/bin/:/Applications/bridge-cli_3.7.1/:/Users/gonz/Documents/apache-maven-3.9.9/bin:/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Applications/VMware Fusion.app/Contents/Public"
+        },
+        "start-time": "2025-11-12T18:44:44.28034+01:00",
+        "end-time": "2025-11-12T18:44:44.292469+01:00",
+        "duration": 12129208
+      },
+      {
+        "command-line": "/Users/gonz/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-manage-emit --dir /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/2025.9.0/idir list-capture-diagnostics",
+        "cwd": "/Users/gonz/Code/VibeCoding/TicTaoToe",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/var/folders/q4/7hthhtjs1tnbj65766xh6cm40000gp/T/polaris_coverity_cache3519011297/.authKey",
+          "COVERITY_CACHE_KEY": "5f132b58-8c8c-4ff0-a09f-1097630e2f11",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/Users/gonz/.blackduck/bridge/tools/sigma/2025.10.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/Users/gonz/.local/bin:/Applications/cov-analysis-macosx-2025.6.2/bin/:/Applications/bridge-cli_3.7.1/:/Users/gonz/Documents/apache-maven-3.9.9/bin:/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Applications/VMware Fusion.app/Contents/Public"
+        },
+        "stdout-tail": [
+          "        \"id\" : 36,",
+          "        \"source-language\" : \"Text data\",",
+          "        \"capture-percentage\" : 100,",
+          "        \"had-failures\" : false,",
+          "        \"had-recoverable-errors\" : false,",
+          "        \"had-abstract-syntax-trees\" : false",
+          "      }",
+          "    }",
+          "  ]",
+          "}"
+        ],
+        "start-time": "2025-11-12T18:44:44.2927+01:00",
+        "end-time": "2025-11-12T18:44:44.303738+01:00",
+        "duration": 11038292
+      },
+      {
+        "command-line": "/Users/gonz/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-run-sigma --project-dir /Users/gonz/Code/VibeCoding/TicTaoToe --dir /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/2025.9.0/idir --coverity-config /var/folders/q4/7hthhtjs1tnbj65766xh6cm40000gp/T/cov-run-sigma-config-2928840005/coverity.yaml --sigma-binary-path /Users/gonz/.blackduck/bridge/tools/sigma/2025.10.0/sigma --enable-telemetry",
+        "cwd": "/Users/gonz/Code/VibeCoding/TicTaoToe",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/var/folders/q4/7hthhtjs1tnbj65766xh6cm40000gp/T/polaris_coverity_cache3519011297/.authKey",
+          "COVERITY_CACHE_KEY": "5f132b58-8c8c-4ff0-a09f-1097630e2f11",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/Users/gonz/.blackduck/bridge/tools/sigma/2025.10.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/Users/gonz/.local/bin:/Applications/cov-analysis-macosx-2025.6.2/bin/:/Applications/bridge-cli_3.7.1/:/Users/gonz/Documents/apache-maven-3.9.9/bin:/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Applications/VMware Fusion.app/Contents/Public"
+        },
+        "stdout-tail": [
+          "cov-run-sigma version 2025.9.0 on Darwin 24.6.0 arm64",
+          "Internal version numbers: 477d3c5ddd p-2025.9-push-57",
+          ""
+        ],
+        "start-time": "2025-11-12T18:44:44.303934+01:00",
+        "end-time": "2025-11-12T18:44:45.556417+01:00",
+        "duration": 1252465042
+      },
+      {
+        "command-line": "/Users/gonz/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-manage-emit --dir /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/2025.9.0/idir list-capture-diagnostics",
+        "cwd": "/Users/gonz/Code/VibeCoding/TicTaoToe",
+        "env": {
+          "COVERITY_CACHE_API_TOKEN_FILE": "/var/folders/q4/7hthhtjs1tnbj65766xh6cm40000gp/T/polaris_coverity_cache3519011297/.authKey",
+          "COVERITY_CACHE_KEY": "5f132b58-8c8c-4ff0-a09f-1097630e2f11",
+          "COVERITY_CACHE_URL": "https://poc.polaris.blackduck.com/api/cache",
+          "COVERITY_CLI_CAPTURE_ZIP_ARCHIVE": "/Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/idir.zip",
+          "COVERITY_CLI_POLARIS_CLIENT": "true",
+          "COVERITY_CLI_POLARIS_SIGMA": "/Users/gonz/.blackduck/bridge/tools/sigma/2025.10.0/sigma",
+          "COVERITY_NO_LOG_ENVIRONMENT_VARIABLES": "1",
+          "PATH": "/Users/gonz/.local/bin:/Applications/cov-analysis-macosx-2025.6.2/bin/:/Applications/bridge-cli_3.7.1/:/Users/gonz/Documents/apache-maven-3.9.9/bin:/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Applications/VMware Fusion.app/Contents/Public"
+        },
+        "stdout-tail": [
+          "        \"id\" : 38,",
+          "        \"source-language\" : \"Text data\",",
+          "        \"capture-percentage\" : 100,",
+          "        \"had-failures\" : false,",
+          "        \"had-recoverable-errors\" : false,",
+          "        \"had-abstract-syntax-trees\" : false",
+          "      }",
+          "    }",
+          "  ]",
+          "}"
+        ],
+        "start-time": "2025-11-12T18:44:45.657345+01:00",
+        "end-time": "2025-11-12T18:44:45.674558+01:00",
+        "duration": 17212792
+      }
+    ]
+  },
+  "analysis": {
+    "configuration": {}
+  }
+}

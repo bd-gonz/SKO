@@ -1,0 +1,5 @@
+
+capture:
+  build:
+    clean-command: npm clean
+    build-command: npm build

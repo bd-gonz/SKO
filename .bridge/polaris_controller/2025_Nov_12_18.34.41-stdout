@@ -1,0 +1,14 @@
+/Users/gonz/.blackduck/desktop/controller/installedtools/bridge/3.9.2/adapters/polaris-controller/versions/0.2.222/polaris-controller /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_controller/data.json
+{"level":"info","logger":"Polaris Controller","msg":"Running for \"sast\" assessment with scan type \"sastFull\"","time":"2025-11-12 18:34:41.0355 CET"}
+{"level":"info","logger":"Polaris Controller","msg":"fetching recommended \"coverity\" tool info...","time":"2025-11-12 18:34:41.0359 CET"}
+{"level":"info","logger":"Polaris Controller","msg":"checking \"coverity\" tool installation inside bridge home directory: /Users/gonz/.blackduck/bridge/tools/cov-thin-client/2025.9.0","time":"2025-11-12 18:34:41.5457 CET"}
+{"level":"info","logger":"Polaris Controller","msg":"Checking tool version for \"cov_thin_client\" in \"/Users/gonz/.blackduck/bridge/tools/cov-thin-client/2025.9.0\"","time":"2025-11-12 18:34:41.5458 CET"}
+{"level":"info","logger":"Polaris Controller","msg":"Running command:/Users/gonz/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/coverity --version","time":"2025-11-12 18:34:41.5461 CET"}
+{"level":"info","logger":"Polaris Controller","msg":"Got tool version for \"cov_thin_client\": 2025.9.0","time":"2025-11-12 18:34:41.5854 CET"}
+{"level":"info","logger":"Polaris Controller","msg":"\"coverity\" tool is already installed...","time":"2025-11-12 18:34:41.8022 CET"}
+{"level":"info","logger":"Polaris Controller","msg":"fetching recommended \"Sigma\" tool info...","time":"2025-11-12 18:34:41.8026 CET"}
+{"level":"info","logger":"Polaris Controller","msg":"checking \"Sigma\" tool installation inside bridge home directory: /Users/gonz/.blackduck/bridge/tools/sigma/2025.10.0","time":"2025-11-12 18:34:42.0398 CET"}
+{"level":"info","logger":"Polaris Controller","msg":"Checking tool version for \"sigma\" in \"/Users/gonz/.blackduck/bridge/tools/sigma/2025.10.0\"","time":"2025-11-12 18:34:42.0399 CET"}
+{"level":"info","logger":"Polaris Controller","msg":"Running command:/Users/gonz/.blackduck/bridge/tools/sigma/2025.10.0/sigma --version","time":"2025-11-12 18:34:42.0399 CET"}
+{"level":"info","logger":"Polaris Controller","msg":"Got tool version for \"sigma\": 2025.10.0","time":"2025-11-12 18:34:42.1056 CET"}
+{"level":"info","logger":"Polaris Controller","msg":"\"Sigma\" tool is already installed...","time":"2025-11-12 18:34:42.3423 CET"}

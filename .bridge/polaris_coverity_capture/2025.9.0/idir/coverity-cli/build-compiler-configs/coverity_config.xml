@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE coverity SYSTEM "coverity_config.dtd">
+<coverity>
+<!-- Version 2025.9.0 -->
+    <cit_version>1</cit_version>
+    <config>
+      <include>$CONFIGDIR$/template-clangcc-config-0/coverity_config.xml</include>
+      <include>$CONFIGDIR$/template-clangcxx-config-0/coverity_config.xml</include>
+      <include>$CONFIGDIR$/template-gcc-config-0/coverity_config.xml</include>
+      <include>$CONFIGDIR$/template-gcc-config-1/coverity_config.xml</include>
+      <include>$CONFIGDIR$/template-gcc-config-2/coverity_config.xml</include>
+      <include>$CONFIGDIR$/template-g++-config-0/coverity_config.xml</include>
+      <include>$CONFIGDIR$/template-g++-config-1/coverity_config.xml</include>
+      <include>$CONFIGDIR$/template-ld-config-0/coverity_config.xml</include>
+      <include>$CONFIGDIR$/template-ar-config-0/coverity_config.xml</include>
+      <include>$CONFIGDIR$/template-g++-config-2/coverity_config.xml</include>
+      <include>$CONFIGDIR$/template-clangcc-config-1/coverity_config.xml</include>
+      <include>$CONFIGDIR$/template-clangcxx-config-1/coverity_config.xml</include>
+      <include>$CONFIGDIR$/template-java-config-0/coverity_config.xml</include>
+      <include>$CONFIGDIR$/template-javac-config-0/coverity_config.xml</include>
+      <include>$CONFIGDIR$/template-apt-config-0/coverity_config.xml</include>
+      <include>$CONFIGDIR$/template-javaw-config-0/coverity_config.xml</include>
+      <include>$CONFIGDIR$/template-jar-config-0/coverity_config.xml</include>
+      <include>$CONFIGDIR$/template-go-config-0/coverity_config.xml</include>
+      <include>$CONFIGDIR$/template-prefix-config-0/coverity_config.xml</include>
+      <include>$CONFIGDIR$/template-kotlinc-config-0/coverity_config.xml</include>
+      <include>$CONFIGDIR$/template-kotlin-config-0/coverity_config.xml</include>
+      <include>$CONFIGDIR$/template-android-config-0/coverity_config.xml</include>
+      <include>$CONFIGDIR$/template-kotlin-module-config-0/coverity_config.xml</include>
+    </config>
+</coverity>
+

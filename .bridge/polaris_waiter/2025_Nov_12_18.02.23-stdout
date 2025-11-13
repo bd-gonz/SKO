@@ -1,0 +1,3 @@
+/Users/gonz/.blackduck/desktop/controller/installedtools/bridge/3.9.2/adapters/polaris-waiter/versions/0.2.88/polaris-waiter /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_waiter/data.json
+{"level":"info","logger":"Polaris Waiter","msg":"Waiting for test with assessment type \"SAST(sastFull)\" and id \"50bcdb0d-fdb1-4486-b4f3-b1f61ce1117d\"","time":"2025-11-12 18:02:23.1371 CET"}
+{"level":"error","logger":"Polaris Waiter","msg":"error while waiting for test with assessment type \"SAST(sastFull)\" and id \"50bcdb0d-fdb1-4486-b4f3-b1f61ce1117d\": the artifact uploaded was found unsuccessful","time":"2025-11-12 18:02:23.1379 CET"}

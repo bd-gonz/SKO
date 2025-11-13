@@ -1,0 +1,4 @@
+/Users/gonz/.blackduck/desktop/controller/installedtools/bridge/3.9.2/adapters/polaris-artifacts-uploader/versions/0.2.116/polaris-artifacts-uploader /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_artifacts_uploader/data.json
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"uploading artifact for \"SAST(sastFull)\" assessment with id \"ea9503ba-9a7c-4c06-8259-11a7d9a47b34\"","time":"2025-11-12 18:03:14.7965 CET"}
+{"level":"error","logger":"Polaris Artifacts Uploader","msg":"error while uploading the artifact \"/Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/idir.zip\" for \"SAST(sastFull)\" assessment: scan was found unsuccessful","time":"2025-11-12 18:03:14.7974 CET"}
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"failed the test for \"SAST(sastFull)\" assessment with id \"ea9503ba-9a7c-4c06-8259-11a7d9a47b34\"","time":"2025-11-12 18:03:15.8703 CET"}

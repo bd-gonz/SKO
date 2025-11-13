@@ -1,0 +1,17 @@
+Running Sigma.
+/Users/gonz/.blackduck/bridge/tools/sigma/2025.10.0/sigma --config /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/2025.9.0/idir/sigma/sigma-config.json --internal-polaris-scan-log /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/2025.9.0/idir/sigma/sigma-log.json --internal-coverity-config /var/folders/q4/7hthhtjs1tnbj65766xh6cm40000gp/T/cov-run-sigma-config-2928840005/coverity.yaml analyze /Users/gonz/Code/VibeCoding/TicTaoToe
+
+Importing sources...
+Detected ISO-8859-1 encoding for /Users/gonz/Code/VibeCoding/TicTaoToe/frontend/api.js
+Detected ISO-8859-1 encoding for /Users/gonz/Code/VibeCoding/TicTaoToe/frontend/script-old.js
+Detected ISO-8859-1 encoding for /Users/gonz/Code/VibeCoding/TicTaoToe/backend/routes/auth.js
+Detected ISO-8859-1 encoding for /Users/gonz/Code/VibeCoding/TicTaoToe/frontend/script.js
+Detected UTF-8 encoding for /Users/gonz/Code/VibeCoding/TicTaoToe/backend/config/database.js
+Detected ISO-8859-1 encoding for /Users/gonz/Code/VibeCoding/TicTaoToe/backend/routes/stats.js
+Detected ISO-8859-1 encoding for /Users/gonz/Code/VibeCoding/TicTaoToe/backend/models/User.js
+Detected ISO-8859-1 encoding for /Users/gonz/Code/VibeCoding/TicTaoToe/script.js
+Detected ISO-8859-1 encoding for /Users/gonz/Code/VibeCoding/TicTaoToe/.codesight/scan_configs/Polaris.json
+Detected UTF-8 encoding for /Users/gonz/Code/VibeCoding/TicTaoToe/backend/server.js
+Detected ISO-8859-1 encoding for /Users/gonz/Code/VibeCoding/TicTaoToe/.codesight/scan_configs/Rapid_Scan_Static.json
+Detected UTF-8 encoding for /Users/gonz/Code/VibeCoding/TicTaoToe/backend/init-database.js
+Completed source import.

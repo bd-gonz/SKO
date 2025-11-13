@@ -1,0 +1,104 @@
+{
+  "configId": {
+    "id": "5d5ccf52-c254-49d2-a8cb-db8634908504"
+  },
+  "scanType": {
+    "type": 1,
+    "name": "Polaris",
+    "supportsDiffing": true,
+    "description": "Runs both static and software composition analysis scans. Detects hard-coded secrets, security defects, and vulnerabilities in both proprietary and open source code."
+  },
+  "coverityConfig": {
+    "configFilePath": {
+      "source": {
+        "type": 8
+      }
+    },
+    "additionalAnalysisArguments": {
+      "source": {
+        "type": 8
+      }
+    }
+  },
+  "blackDuckConfig": {
+    "additionalArguments": {
+      "source": {
+        "type": 8
+      }
+    },
+    "configFilePath": {
+      "source": {
+        "type": 8
+      }
+    },
+    "searchDepth": {
+      "source": {
+        "type": 8
+      }
+    }
+  },
+  "bridgeConfig": {
+    "installationLocation": {
+      "source": {
+        "type": 8
+      }
+    },
+    "additionalArguments": {
+      "source": {
+        "type": 8
+      }
+    },
+    "configFilePath": {
+      "source": {
+        "type": 8
+      }
+    },
+    "scanTypes": [
+      0,
+      1
+    ]
+  },
+  "issueSource": {
+    "reference": {
+      "info": {
+        "name": "EGC-VibeCoding-TicTacToe",
+        "id": "9892a171-8fbd-4919-8827-8970ae4ef803",
+        "displayName": "EGC-VibeCoding-TicTacToe",
+        "depth": 2
+      },
+      "parent": {
+        "info": {
+          "name": "EGC-VibeCoding",
+          "id": "23b6b1d8-7d2f-40ca-a6a2-e4e818223c77",
+          "displayName": "EGC-VibeCoding",
+          "depth": 1,
+          "localId": "poc.polaris.blackduck.com--EGC-VibeCoding-23b6b1d8-7d2f-40ca-a6a2-e4e818223c77"
+        }
+      }
+    }
+  },
+  "buildConfig": {
+    "buildCommand": {
+      "value": "npm install",
+      "source": {
+        "type": 8
+      }
+    },
+    "cleanCommand": {
+      "source": {
+        "type": 8
+      }
+    }
+  },
+  "workingDirectory": {
+    "value": "/Users/gonz/Code/VibeCoding/TicTaoToe",
+    "source": {
+      "type": 8
+    }
+  },
+  "path": {
+    "source": {
+      "type": 8
+    }
+  }
+}

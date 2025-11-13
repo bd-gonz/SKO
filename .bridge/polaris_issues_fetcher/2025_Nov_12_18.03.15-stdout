@@ -1,0 +1,2 @@
+/Users/gonz/.blackduck/desktop/controller/installedtools/bridge/3.9.2/adapters/polaris-issues-fetcher/versions/0.2.83/polaris-issues-fetcher /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_issues_fetcher/data.json
+{"level":"warning","logger":"Polaris Issues Fetcher","msg":"Will not fetch issues for \"SAST(sastFull)\" assessment, as the test is not completed","time":"2025-11-12 18:03:15.9710 CET"}

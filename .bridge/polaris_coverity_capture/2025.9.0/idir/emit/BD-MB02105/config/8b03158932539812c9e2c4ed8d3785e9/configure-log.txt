@@ -1,0 +1,4 @@
+Native Compiler invocation: ./ --coverity_resp_file=/Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/2025.9.0/idir/tmp/cicf-93e7f0981e8b3199ec9a9d024922d1e6/cov-translate-resp-file3
+Working directory: /Users/gonz/Code/VibeCoding/TicTaoToe
+Comptype: html
+* Configuring JavaScript Buildless Capture (html)

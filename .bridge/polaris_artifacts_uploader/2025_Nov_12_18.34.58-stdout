@@ -1,0 +1,9 @@
+/Users/gonz/.blackduck/desktop/controller/installedtools/bridge/3.9.2/adapters/polaris-artifacts-uploader/versions/0.2.116/polaris-artifacts-uploader /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_artifacts_uploader/data.json
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"uploading artifact for \"SAST(sastFull)\" assessment with id \"2b47e760-d80f-40f3-bf99-effe5147c3c7\"","time":"2025-11-12 18:34:58.4930 CET"}
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"Uploading artifact /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/idir.zip for \"SAST(sastFull)\" assessment","time":"2025-11-12 18:34:59.6460 CET"}
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"Uploading Progress of \"SAST(sastFull)\" artifact:   7%  16384/209381","time":"2025-11-12 18:35:00.1159 CET"}
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"Uploading Progress of \"SAST(sastFull)\" artifact:  39%  81920/209381","time":"2025-11-12 18:35:00.2447 CET"}
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"Uploading Progress of \"SAST(sastFull)\" artifact:  70%  147456/209381","time":"2025-11-12 18:35:00.2522 CET"}
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"Uploading Progress of \"SAST(sastFull)\" artifact: 100%  209381/209381","time":"2025-11-12 18:35:00.5442 CET"}
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"successfully uploaded artifact \"/Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/idir.zip\"","time":"2025-11-12 18:35:01.1205 CET"}
+{"level":"info","logger":"Polaris Artifacts Uploader","msg":"successfully resumed \"SAST(sastFull)\" assessment with id \"2b47e760-d80f-40f3-bf99-effe5147c3c7\"","time":"2025-11-12 18:35:01.5977 CET"}

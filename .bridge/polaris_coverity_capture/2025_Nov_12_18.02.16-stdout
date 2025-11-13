@@ -1,0 +1,38 @@
+/Users/gonz/.blackduck/desktop/controller/installedtools/bridge/3.9.2/adapters/coverity-capture/versions/0.2.168/coverity-capture /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/data.json
+{"level":"info","logger":"Coverity Capture","msg":"Identified workflow: Polaris","time":"2025-11-12 18:02:16.4974 CET"}
+{"level":"info","logger":"Coverity Capture","msg":"command: /Users/gonz/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/coverity capture --dir /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/2025.9.0/idir -o analyze.location=connect -- cd backend \u0026\u0026 npm install","time":"2025-11-12 18:02:16.4980 CET"}
+{"external_parsed":true,"level":"info","logger":"Coverity Capture","msg":"coverity 2025.9.0 covcli-2025.9-push-12","time":"2025-11-12 18:02:16.5524 CET"}
+{"external_parsed":true,"level":"info","logger":"Coverity Capture","msg":"envvar: COVERITY_CACHE_API_TOKEN_FILE=/var/folders/q4/7hthhtjs1tnbj65766xh6cm40000gp/T/polaris_coverity_cache192759305/.authKey","time":"2025-11-12 18:02:16.5524 CET"}
+{"external_parsed":true,"level":"info","logger":"Coverity Capture","msg":"envvar: COVERITY_CACHE_KEY=5f132b58-8c8c-4ff0-a09f-1097630e2f11","time":"2025-11-12 18:02:16.5524 CET"}
+{"external_parsed":true,"level":"info","logger":"Coverity Capture","msg":"envvar: COVERITY_CACHE_URL=https://poc.polaris.blackduck.com/api/cache","time":"2025-11-12 18:02:16.5524 CET"}
+{"external_parsed":true,"level":"info","logger":"Coverity Capture","msg":"envvar: COVERITY_CLI_CAPTURE_ZIP_ARCHIVE=/Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/idir.zip","time":"2025-11-12 18:02:16.5524 CET"}
+{"external_parsed":true,"level":"info","logger":"Coverity Capture","msg":"envvar: COVERITY_CLI_POLARIS_CLIENT=true","time":"2025-11-12 18:02:16.5525 CET"}
+{"external_parsed":true,"level":"info","logger":"Coverity Capture","msg":"Executing command: /Users/gonz/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-manage-emit --dir /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/2025.9.0/idir reset-host-name","time":"2025-11-12 18:02:16.5561 CET"}
+{"external_parsed":true,"level":"info","logger":"Coverity Capture","msg":"Executing command: /Users/gonz/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-manage-emit --dir /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/2025.9.0/idir check-compatible","time":"2025-11-12 18:02:16.5927 CET"}
+{"external_parsed":true,"level":"info","logger":"Coverity Capture","msg":"Detected that stdout is not connected to a terminal.  Defaulting ticker mode to 'none'.","time":"2025-11-12 18:02:16.6127 CET"}
+{"external_parsed":true,"level":"info","logger":"Coverity Capture","msg":"If this is not correct, explicitly set the ticker mode to the desired value using the '--ticker-mode' option.","time":"2025-11-12 18:02:16.6128 CET"}
+{"external_parsed":true,"level":"info","logger":"Coverity Capture","msg":"Using lightweight capture with thin client.","time":"2025-11-12 18:02:16.6146 CET"}
+{"external_parsed":true,"level":"info","logger":"Coverity Capture","msg":"Executing command: /Users/gonz/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-internal-manage-cache check","time":"2025-11-12 18:02:16.6148 CET"}
+{"external_parsed":true,"level":"info","logger":"Coverity Capture","msg":"Caching is enabled.","time":"2025-11-12 18:02:17.2405 CET"}
+{"external_parsed":true,"level":"info","logger":"Coverity Capture","msg":"Telemetry is enabled","time":"2025-11-12 18:02:17.2417 CET"}
+{"external_parsed":true,"level":"info","logger":"Coverity Capture","msg":"Executing command: /Users/gonz/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-manage-emit --dir /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/2025.9.0/idir list-capture-diagnostics","time":"2025-11-12 18:02:17.3531 CET"}
+{"external_parsed":true,"level":"info","logger":"Coverity Capture","msg":"Executing action no-op: nothing to do for initialization","time":"2025-11-12 18:02:17.3655 CET"}
+{"external_parsed":true,"level":"info","logger":"Coverity Capture","msg":"Executing action no-op: skipping compiler configuration","time":"2025-11-12 18:02:17.4548 CET"}
+{"external_parsed":true,"level":"info","logger":"Coverity Capture","msg":"Executing action no-op: no compilers need to be unconfigured","time":"2025-11-12 18:02:17.5401 CET"}
+{"external_parsed":true,"level":"info","logger":"Coverity Capture","msg":"Executing action no-op: compiler configurations loaded","time":"2025-11-12 18:02:17.6185 CET"}
+{"external_parsed":true,"level":"info","logger":"Coverity Capture","msg":"Executing action Invoke build capture: /Users/gonz/.blackduck/bridge/tools/cov-thin-client/2025.9.0/bin/cov-build --dir /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/2025.9.0/idir -c /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/2025.9.0/idir/coverity-cli/build-compiler-configs/coverity_config.xml --append-log --no-security-da --record-with-source --no-xrefs --enable-scan-transparency-data --bytecode-caching cd backend \u0026\u0026 npm install","time":"2025-11-12 18:02:17.7090 CET"}
+{"external_parsed":true,"level":"info","logger":"Coverity Capture","msg":"Coverity Build Capture (64-bit) version 2025.9.0 on Darwin 24.6.0 arm64","time":"2025-11-12 18:02:17.7366 CET"}
+{"external_parsed":true,"level":"info","logger":"Coverity Capture","msg":"Internal version numbers: 477d3c5ddd p-2025.9-push-57","time":"2025-11-12 18:02:17.7366 CET"}
+{"external_parsed":true,"level":"info","logger":"Coverity Capture","msg":"","time":"2025-11-12 18:02:17.7366 CET"}
+{"external_parsed":true,"level":"info","logger":"Coverity Capture","msg":"","time":"2025-11-12 18:02:17.7488 CET"}
+{"external_parsed":true,"level":"info","logger":"Coverity Capture","msg":"/usr/bin/cd: line 4: cd: backend: No such file or directory","time":"2025-11-12 18:02:21.8544 CET"}
+{"external_parsed":true,"level":"info","logger":"Coverity Capture","msg":"Attempting to detect unconfigured compilers in build","time":"2025-11-12 18:02:22.0575 CET"}
+{"external_parsed":true,"level":"info","logger":"Coverity Capture","msg":"|0----------25-----------50----------75---------100|","time":"2025-11-12 18:02:22.0583 CET"}
+{"external_parsed":true,"level":"info","logger":"Coverity Capture","msg":"****************************************************","time":"2025-11-12 18:02:22.0682 CET"}
+{"external_parsed":true,"level":"warning","logger":"Coverity Capture","msg":"Build command cd backend \u0026\u0026 npm install exited with code 1. Please verify that the build completed successfully.","time":"2025-11-12 18:02:22.0705 CET"}
+{"external_parsed":true,"level":"info","logger":"Coverity Capture","msg":" For more details, please look at: ","time":"2025-11-12 18:02:22.0705 CET"}
+{"external_parsed":true,"level":"info","logger":"Coverity Capture","msg":"    /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_coverity_capture/2025.9.0/idir/build-log.txt","time":"2025-11-12 18:02:22.0705 CET"}
+{"external_parsed":true,"level":"info","logger":"Coverity Capture","msg":"Capture phase took 4.866s.","time":"2025-11-12 18:02:22.1068 CET"}
+{"external_parsed":true,"level":"error","logger":"Coverity Capture","msg":"The provided build command failed with exit code '1'.","time":"2025-11-12 18:02:22.1071 CET"}
+{"level":"error","logger":"Coverity Capture","msg":"exit status 1","time":"2025-11-12 18:02:22.1084 CET"}
+{"level":"error","logger":"Coverity Capture","msg":"exit code: 1","time":"2025-11-12 18:02:22.1085 CET"}

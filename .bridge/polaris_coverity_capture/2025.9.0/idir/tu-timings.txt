@@ -1,0 +1,142 @@
+Translation unit:
+1 -> /Users/gonz/Code/VibeCoding/TicTaoToe/index.html (no ASTs) (recorded with source)
+cov-internal-emit-misc invocation time (seconds): 0
+cov-translate invocation time (seconds): 1
+cov-build invocation time (seconds): 3
+Translation unit:
+2 -> /Users/gonz/Code/VibeCoding/TicTaoToe/frontend/index.html (no ASTs) (recorded with source)
+cov-internal-emit-misc invocation time (seconds): 0
+cov-translate invocation time (seconds): 1
+cov-build invocation time (seconds): 3
+Translation unit:
+3 -> /Users/gonz/Code/VibeCoding/TicTaoToe/backend/init-database.js (no ASTs) (recorded with source)
+cov-internal-emit-misc invocation time (seconds): 0
+cov-translate invocation time (seconds): 1
+cov-build invocation time (seconds): 3
+Translation unit:
+4 -> /Users/gonz/Code/VibeCoding/TicTaoToe/backend/server.js (no ASTs) (recorded with source)
+cov-internal-emit-misc invocation time (seconds): 0
+cov-translate invocation time (seconds): 1
+cov-build invocation time (seconds): 3
+Translation unit:
+5 -> /Users/gonz/Code/VibeCoding/TicTaoToe/backend/config/database.js (no ASTs) (recorded with source)
+cov-internal-emit-misc invocation time (seconds): 0
+cov-translate invocation time (seconds): 1
+cov-build invocation time (seconds): 3
+Translation unit:
+6 -> /Users/gonz/Code/VibeCoding/TicTaoToe/backend/models/User.js (no ASTs) (recorded with source)
+cov-internal-emit-misc invocation time (seconds): 0
+cov-translate invocation time (seconds): 1
+cov-build invocation time (seconds): 3
+Translation unit:
+7 -> /Users/gonz/Code/VibeCoding/TicTaoToe/backend/routes/auth.js (no ASTs) (recorded with source)
+cov-internal-emit-misc invocation time (seconds): 0
+cov-translate invocation time (seconds): 1
+cov-build invocation time (seconds): 3
+Translation unit:
+8 -> /Users/gonz/Code/VibeCoding/TicTaoToe/backend/routes/stats.js (no ASTs) (recorded with source)
+cov-internal-emit-misc invocation time (seconds): 0
+cov-translate invocation time (seconds): 1
+cov-build invocation time (seconds): 3
+Translation unit:
+9 -> /Users/gonz/Code/VibeCoding/TicTaoToe/script.js (no ASTs) (recorded with source)
+cov-internal-emit-misc invocation time (seconds): 0
+cov-translate invocation time (seconds): 1
+cov-build invocation time (seconds): 3
+Translation unit:
+10 -> /Users/gonz/Code/VibeCoding/TicTaoToe/frontend/api.js (no ASTs) (recorded with source)
+cov-internal-emit-misc invocation time (seconds): 0
+cov-translate invocation time (seconds): 1
+cov-build invocation time (seconds): 3
+Translation unit:
+11 -> /Users/gonz/Code/VibeCoding/TicTaoToe/frontend/script-old.js (no ASTs) (recorded with source)
+cov-internal-emit-misc invocation time (seconds): 0
+cov-translate invocation time (seconds): 1
+cov-build invocation time (seconds): 3
+Translation unit:
+12 -> /Users/gonz/Code/VibeCoding/TicTaoToe/frontend/script.js (no ASTs) (recorded with source)
+cov-internal-emit-misc invocation time (seconds): 0
+cov-translate invocation time (seconds): 1
+cov-build invocation time (seconds): 3
+Translation unit:
+13 -> /Users/gonz/Code/VibeCoding/TicTaoToe/backend/README.md (text data)
+cov-emit-text invocation time (seconds): 0
+cov-build invocation time (seconds): 3
+Translation unit:
+14 -> /Users/gonz/Code/VibeCoding/TicTaoToe/backend/package-lock.json (text data)
+cov-emit-text invocation time (seconds): 0
+cov-build invocation time (seconds): 3
+Translation unit:
+15 -> /Users/gonz/Code/VibeCoding/TicTaoToe/backend/.env (text data)
+cov-emit-text invocation time (seconds): 0
+cov-build invocation time (seconds): 3
+Translation unit:
+16 -> /Users/gonz/Code/VibeCoding/TicTaoToe/backend/package.json (text data)
+cov-emit-text invocation time (seconds): 0
+cov-build invocation time (seconds): 3
+Translation unit:
+17 -> /Users/gonz/Code/VibeCoding/TicTaoToe/backend/.env.example (text data)
+cov-emit-text invocation time (seconds): 0
+cov-build invocation time (seconds): 3
+Translation unit:
+18 -> /Users/gonz/Code/VibeCoding/TicTaoToe/styles.css (text data)
+cov-emit-text invocation time (seconds): 0
+cov-build invocation time (seconds): 3
+Translation unit:
+19 -> /Users/gonz/Code/VibeCoding/TicTaoToe/frontend/styles.css (text data)
+cov-emit-text invocation time (seconds): 0
+cov-build invocation time (seconds): 3
+Translation unit:
+20 -> /Users/gonz/Code/VibeCoding/TicTaoToe/FEATURE_IDEAS.md (text data)
+cov-emit-text invocation time (seconds): 0
+cov-build invocation time (seconds): 3
+Translation unit:
+21 -> /Users/gonz/Code/VibeCoding/TicTaoToe/README.md (text data)
+cov-emit-text invocation time (seconds): 0
+cov-build invocation time (seconds): 3
+Translation unit:
+22 -> /Users/gonz/Code/VibeCoding/TicTaoToe/SETUP_MYSQL.md (text data)
+cov-emit-text invocation time (seconds): 0
+cov-build invocation time (seconds): 3
+Translation unit:
+23 -> /Users/gonz/Code/VibeCoding/TicTaoToe/frontend/api.js (text data)
+cov-emit-text invocation time (seconds): 0
+Translation unit:
+24 -> /Users/gonz/Code/VibeCoding/TicTaoToe/frontend/script-old.js (text data)
+cov-emit-text invocation time (seconds): 0
+Translation unit:
+25 -> /Users/gonz/Code/VibeCoding/TicTaoToe/backend/routes/auth.js (text data)
+cov-emit-text invocation time (seconds): 0
+Translation unit:
+26 -> /Users/gonz/Code/VibeCoding/TicTaoToe/frontend/script.js (text data)
+cov-emit-text invocation time (seconds): 0
+Translation unit:
+27 -> /Users/gonz/Code/VibeCoding/TicTaoToe/backend/config/database.js (text data)
+cov-emit-text invocation time (seconds): 0
+Translation unit:
+28 -> /Users/gonz/Code/VibeCoding/TicTaoToe/backend/server.js (text data)
+cov-emit-text invocation time (seconds): 0
+Translation unit:
+29 -> /Users/gonz/Code/VibeCoding/TicTaoToe/backend/routes/stats.js (text data)
+cov-emit-text invocation time (seconds): 0
+Translation unit:
+30 -> /Users/gonz/Code/VibeCoding/TicTaoToe/backend/models/User.js (text data)
+cov-emit-text invocation time (seconds): 0
+Translation unit:
+31 -> /Users/gonz/Code/VibeCoding/TicTaoToe/build.sh (text data)
+cov-emit-text invocation time (seconds): 0
+Translation unit:
+33 -> /Users/gonz/Code/VibeCoding/TicTaoToe/script.js (text data)
+cov-emit-text invocation time (seconds): 0
+Translation unit:
+35 -> /Users/gonz/Code/VibeCoding/TicTaoToe/backend/init-database.js (text data)
+cov-emit-text invocation time (seconds): 0
+Translation unit:
+36 -> /Users/gonz/Code/VibeCoding/TicTaoToe/coverity.yaml (text data)
+cov-emit-text invocation time (seconds): 0
+Translation unit:
+37 -> /Users/gonz/Code/VibeCoding/TicTaoToe/.codesight/scan_configs/Rapid_Scan_Static.json (text data)
+cov-emit-text invocation time (seconds): 0
+Translation unit:
+38 -> /Users/gonz/Code/VibeCoding/TicTaoToe/.codesight/scan_configs/Polaris.json (text data)
+cov-emit-text invocation time (seconds): 0

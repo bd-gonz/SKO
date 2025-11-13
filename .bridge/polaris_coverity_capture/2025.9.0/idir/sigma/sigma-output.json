@@ -1,0 +1,4422 @@
+{
+  "header": {
+    "version": 1,
+    "format": "coverity-sigma-integration"
+  },
+  "sources": [
+    {
+      "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/SETUP_MYSQL.md",
+      "language": "text"
+    },
+    {
+      "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/frontend/api.js",
+      "language": "javascript"
+    },
+    {
+      "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/.env.example",
+      "language": "text"
+    },
+    {
+      "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/frontend/script-old.js",
+      "language": "javascript"
+    },
+    {
+      "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/FEATURE_IDEAS.md",
+      "language": "text"
+    },
+    {
+      "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/routes/auth.js",
+      "language": "javascript"
+    },
+    {
+      "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/index.html",
+      "language": "html"
+    },
+    {
+      "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/frontend/script.js",
+      "language": "javascript"
+    },
+    {
+      "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/frontend/styles.css",
+      "language": "text"
+    },
+    {
+      "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/README.md",
+      "language": "text"
+    },
+    {
+      "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/styles.css",
+      "language": "text"
+    },
+    {
+      "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/config/database.js",
+      "language": "javascript"
+    },
+    {
+      "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/routes/stats.js",
+      "language": "javascript"
+    },
+    {
+      "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/models/User.js",
+      "language": "javascript"
+    },
+    {
+      "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/script.js",
+      "language": "javascript"
+    },
+    {
+      "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/build.sh",
+      "language": "text"
+    },
+    {
+      "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/.codesight/scan_configs/Polaris.json",
+      "language": "text"
+    },
+    {
+      "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/server.js",
+      "language": "javascript"
+    },
+    {
+      "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/coverity.yaml",
+      "language": "text"
+    },
+    {
+      "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/frontend/index.html",
+      "language": "html"
+    },
+    {
+      "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/.codesight/scan_configs/Rapid_Scan_Static.json",
+      "language": "text"
+    },
+    {
+      "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/init-database.js",
+      "language": "javascript"
+    },
+    {
+      "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/README.md",
+      "language": "text"
+    },
+    {
+      "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/.env",
+      "language": "text"
+    },
+    {
+      "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/package.json",
+      "language": "text"
+    }
+  ],
+  "issues": [
+    {
+      "checker": "SIGMA.hardcoded_secret",
+      "function": "",
+      "language": "text",
+      "subType": "pattern_low",
+      "issueType": "sigma.hardcoded_secret",
+      "events": [
+        {
+          "description": "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Secret (generic).",
+          "line": 13,
+          "main": true,
+          "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/.env",
+          "tag": "Sigma main event",
+          "linkURL": "",
+          "linkText": ""
+        },
+        {
+          "description": "Avoid setting sensitive configuration values as string literals. Instead, these values should be set using variables with the sensitive data loaded from an encrypted file or a secret store.",
+          "line": 13,
+          "main": false,
+          "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/.env",
+          "tag": "remediation",
+          "linkURL": "",
+          "linkText": ""
+        }
+      ],
+      "extra": "JWT_SECRET-your_jwt_secret_key_change_this_in_production",
+      "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/.env",
+      "subcategory": "pattern_low",
+      "properties": {
+        "category": "Sigma",
+        "impact": "Low",
+        "issueKind": "SECURITY",
+        "localEffect": "",
+        "longDescription": "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to.",
+        "type": "Hard-coded secret",
+        "cwe": 798
+      },
+      "antecedentMerges": [
+        {
+          "checker": "SIGMA.hardcoded_secret_pattern"
+        }
+      ]
+    },
+    {
+      "checker": "SIGMA.hardcoded_secret",
+      "function": "",
+      "language": "text",
+      "subType": "pattern_low",
+      "issueType": "sigma.hardcoded_secret",
+      "events": [
+        {
+          "description": "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Password (generic).",
+          "line": 4,
+          "main": true,
+          "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/.env",
+          "tag": "Sigma main event",
+          "linkURL": "",
+          "linkText": ""
+        },
+        {
+          "description": "Avoid setting sensitive configuration values as string literals. Instead, these values should be set using variables with the sensitive data loaded from an encrypted file or a secret store.",
+          "line": 4,
+          "main": false,
+          "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/.env",
+          "tag": "remediation",
+          "linkURL": "",
+          "linkText": ""
+        }
+      ],
+      "extra": "DB_PASSWORD-cBlack.3mmg1u",
+      "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/.env",
+      "subcategory": "pattern_low",
+      "properties": {
+        "category": "Sigma",
+        "impact": "Low",
+        "issueKind": "SECURITY",
+        "localEffect": "",
+        "longDescription": "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to.",
+        "type": "Hard-coded secret",
+        "cwe": 798
+      },
+      "antecedentMerges": [
+        {
+          "checker": "SIGMA.hardcoded_secret_pattern"
+        }
+      ]
+    },
+    {
+      "checker": "SIGMA.hardcoded_secret",
+      "function": "",
+      "language": "text",
+      "subType": "pattern_low",
+      "issueType": "sigma.hardcoded_secret",
+      "events": [
+        {
+          "description": "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Secret (generic).",
+          "line": 13,
+          "main": true,
+          "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/.env.example",
+          "tag": "Sigma main event",
+          "linkURL": "",
+          "linkText": ""
+        },
+        {
+          "description": "Avoid setting sensitive configuration values as string literals. Instead, these values should be set using variables with the sensitive data loaded from an encrypted file or a secret store.",
+          "line": 13,
+          "main": false,
+          "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/.env.example",
+          "tag": "remediation",
+          "linkURL": "",
+          "linkText": ""
+        }
+      ],
+      "extra": "JWT_SECRET-your_jwt_secret_key_change_this_in_production",
+      "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/.env.example",
+      "subcategory": "pattern_low",
+      "properties": {
+        "category": "Sigma",
+        "impact": "Low",
+        "issueKind": "SECURITY",
+        "localEffect": "",
+        "longDescription": "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to.",
+        "type": "Hard-coded secret",
+        "cwe": 798
+      },
+      "antecedentMerges": [
+        {
+          "checker": "SIGMA.hardcoded_secret_pattern"
+        }
+      ]
+    },
+    {
+      "checker": "SIGMA.hardcoded_secret",
+      "function": "",
+      "language": "text",
+      "subType": "pattern_low",
+      "issueType": "sigma.hardcoded_secret",
+      "events": [
+        {
+          "description": "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to. Secret type: Password (generic).",
+          "line": 4,
+          "main": true,
+          "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/.env.example",
+          "tag": "Sigma main event",
+          "linkURL": "",
+          "linkText": ""
+        },
+        {
+          "description": "Avoid setting sensitive configuration values as string literals. Instead, these values should be set using variables with the sensitive data loaded from an encrypted file or a secret store.",
+          "line": 4,
+          "main": false,
+          "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/.env.example",
+          "tag": "remediation",
+          "linkURL": "",
+          "linkText": ""
+        }
+      ],
+      "extra": "DB_PASSWORD-your_password_here",
+      "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/.env.example",
+      "subcategory": "pattern_low",
+      "properties": {
+        "category": "Sigma",
+        "impact": "Low",
+        "issueKind": "SECURITY",
+        "localEffect": "",
+        "longDescription": "A secret, such as a password, cryptographic key, or token is stored in plaintext directly in the source code, in an application's properties, or configuration file. Users with access to the secret may then use the secret to access resources that they otherwise would not have access to.",
+        "type": "Hard-coded secret",
+        "cwe": 798
+      },
+      "antecedentMerges": [
+        {
+          "checker": "SIGMA.hardcoded_secret_pattern"
+        }
+      ]
+    },
+    {
+      "checker": "SIGMA.cors_configured_globally",
+      "coverityCheckerName": [
+        "Coverity.CORS_MISCONFIGURATION"
+      ],
+      "function": "!server.js!%SCRIPT",
+      "language": "javascript",
+      "subType": "express_cors",
+      "issueType": "sigma.cors_configured_globally",
+      "events": [
+        {
+          "description": "The CORS policies registered by the `cors` middleware are applied globally for the Express server. The CORS headers will be included for all routes, violating the principle of least privileges by loosening the browser's Same Origin Policy restrictions for the entire the application. This can lead to cross-origin information leakage.",
+          "line": 13,
+          "main": true,
+          "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/server.js",
+          "tag": "Sigma main event",
+          "linkURL": "",
+          "linkText": ""
+        },
+        {
+          "description": "Only apply the `cors` middleware to specific routes where it is necessary to share data across origins.",
+          "line": 13,
+          "main": false,
+          "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/server.js",
+          "tag": "remediation",
+          "linkURL": "",
+          "linkText": ""
+        }
+      ],
+      "extra": "cors_configured_globally_express_cors -- /backend/server.js",
+      "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/server.js",
+      "subcategory": "express_cors",
+      "properties": {
+        "category": "Sigma",
+        "impact": "Low",
+        "issueKind": "SECURITY",
+        "localEffect": "",
+        "longDescription": "The CORS policies registered by the `cors` middleware are applied globally for the Express server. The CORS headers will be included for all routes, violating the principle of least privileges by loosening the browser's Same Origin Policy restrictions for the entire the application. This can lead to cross-origin information leakage.",
+        "type": "CORS middleware configured globally",
+        "cwe": 272
+      },
+      "antecedentMerges": [
+        {
+          "checker": "SIGMA.cors_configured_globally_express_cors"
+        }
+      ]
+    },
+    {
+      "checker": "SIGMA.cors_origin_string",
+      "coverityCheckerName": [
+        "Coverity.CORS_MISCONFIGURATION_AUDIT"
+      ],
+      "function": "!server.js!%SCRIPT",
+      "language": "javascript",
+      "subType": "express_cors",
+      "issueType": "sigma.cors_origin_string",
+      "events": [
+        {
+          "description": "The `origin` option of the `cors()` middleware is configured with a single string value. As a result, the CORS policy will disclose the trusted origin to all other origins via the `Access-Control-Allow-Origin` header.",
+          "line": 14,
+          "main": true,
+          "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/server.js",
+          "tag": "Sigma main event",
+          "linkURL": "",
+          "linkText": ""
+        },
+        {
+          "description": "Set the `origin` to an array of strings even if it contains only one value, instead of a single string literal.",
+          "line": 14,
+          "main": false,
+          "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/server.js",
+          "tag": "remediation",
+          "linkURL": "",
+          "linkText": ""
+        }
+      ],
+      "extra": "cors_origin_string_express_cors -- /backend/server.js",
+      "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/server.js",
+      "subcategory": "express_cors",
+      "properties": {
+        "category": "Sigma",
+        "impact": "Low",
+        "issueKind": "SECURITY",
+        "localEffect": "",
+        "longDescription": "The `origin` option of the `cors()` middleware is configured with a single string value. As a result, the CORS policy will disclose the trusted origin to all other origins via the `Access-Control-Allow-Origin` header.",
+        "type": "CORS origin configured as a single string",
+        "cwe": 200
+      },
+      "antecedentMerges": [
+        {
+          "checker": "SIGMA.cors_origin_string_express_cors"
+        }
+      ]
+    },
+    {
+      "checker": "SIGMA.verbose_server_banner",
+      "coverityCheckerName": [
+        "Coverity.EXPRESS_X_POWERED_BY_ENABLED"
+      ],
+      "function": "!server.js!%SCRIPT",
+      "language": "javascript",
+      "subType": "express",
+      "issueType": "sigma.verbose_server_banner",
+      "events": [
+        {
+          "description": "HTTP responses contain an `X-Powered-By` header that reveals information about the server which helps attackers exploit known vulnerabilities or craft more targeted exploits.",
+          "line": 9,
+          "main": true,
+          "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/server.js",
+          "tag": "Sigma main event",
+          "linkURL": "",
+          "linkText": ""
+        },
+        {
+          "description": "Use `app.disable('x-powered-by')` to disable the `X-Powered-By` header. If you're using an older version of Express that does not support this setting and you can't upgrade, create a middleware to call `res.removeHeader(\"x-powered-by\")` where `res` is the response object.",
+          "line": 9,
+          "main": false,
+          "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/server.js",
+          "tag": "remediation",
+          "linkURL": "",
+          "linkText": ""
+        }
+      ],
+      "extra": "verbose_server_banner_express -- /backend/server.js",
+      "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/server.js",
+      "subcategory": "express",
+      "properties": {
+        "category": "Sigma",
+        "impact": "Low",
+        "issueKind": "SECURITY",
+        "localEffect": "",
+        "longDescription": "HTTP responses contain an `X-Powered-By` header that reveals information about the server which helps attackers exploit known vulnerabilities or craft more targeted exploits.",
+        "type": "Sending X-Powered-By header",
+        "cwe": 201
+      },
+      "antecedentMerges": [
+        {
+          "checker": "SIGMA.verbose_server_banner_express"
+        }
+      ]
+    },
+    {
+      "checker": "SIGMA.excessive_token_lifetime",
+      "function": "!auth.js!%IPFE",
+      "language": "javascript",
+      "subType": "jsonwebtoken",
+      "issueType": "sigma.excessive_token_lifetime",
+      "events": [
+        {
+          "description": "The expiration for JWT token is set to more than 30 minutes. Keeping the session token alive for long makes the application vulnerable to session-based attacks where attackers might steal the token and use it to impersonate the user.",
+          "line": 69,
+          "main": true,
+          "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/routes/auth.js",
+          "tag": "Sigma main event",
+          "linkURL": "",
+          "linkText": ""
+        },
+        {
+          "description": "Reduce the session token lifetime by setting the `expiresIn` value to less than 30 minutes to minimize the chances of session-based attacks.",
+          "line": 69,
+          "main": false,
+          "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/routes/auth.js",
+          "tag": "remediation",
+          "linkURL": "",
+          "linkText": ""
+        }
+      ],
+      "extra": "excessive_token_lifetime_jsonwebtoken -- backend/routes/auth.js",
+      "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/routes/auth.js",
+      "subcategory": "jsonwebtoken",
+      "properties": {
+        "category": "Sigma",
+        "impact": "Low",
+        "issueKind": "SECURITY",
+        "localEffect": "",
+        "longDescription": "The expiration for JWT token is set to more than 30 minutes. Keeping the session token alive for long makes the application vulnerable to session-based attacks where attackers might steal the token and use it to impersonate the user.",
+        "type": "Excessive token lifetime",
+        "cwe": 613
+      },
+      "antecedentMerges": [
+        {
+          "function": "!<placeholder>!%ANONYMOUS(Unknown, Unknown)Unknown"
+        },
+        {
+          "checker": "SIGMA.excessive_token_lifetime_jsonwebtoken"
+        }
+      ]
+    },
+    {
+      "checker": "SIGMA.excessive_token_lifetime",
+      "function": "!auth.js!%IPFE",
+      "language": "javascript",
+      "subType": "jsonwebtoken",
+      "issueType": "sigma.excessive_token_lifetime",
+      "events": [
+        {
+          "description": "The expiration for JWT token is set to more than 30 minutes. Keeping the session token alive for long makes the application vulnerable to session-based attacks where attackers might steal the token and use it to impersonate the user.",
+          "line": 147,
+          "main": true,
+          "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/routes/auth.js",
+          "tag": "Sigma main event",
+          "linkURL": "",
+          "linkText": ""
+        },
+        {
+          "description": "Reduce the session token lifetime by setting the `expiresIn` value to less than 30 minutes to minimize the chances of session-based attacks.",
+          "line": 147,
+          "main": false,
+          "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/routes/auth.js",
+          "tag": "remediation",
+          "linkURL": "",
+          "linkText": ""
+        }
+      ],
+      "extra": "excessive_token_lifetime_jsonwebtoken -- backend/routes/auth.js",
+      "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/routes/auth.js",
+      "subcategory": "jsonwebtoken",
+      "properties": {
+        "category": "Sigma",
+        "impact": "Low",
+        "issueKind": "SECURITY",
+        "localEffect": "",
+        "longDescription": "The expiration for JWT token is set to more than 30 minutes. Keeping the session token alive for long makes the application vulnerable to session-based attacks where attackers might steal the token and use it to impersonate the user.",
+        "type": "Excessive token lifetime",
+        "cwe": 613
+      },
+      "antecedentMerges": [
+        {
+          "function": "!<placeholder>!%ANONYMOUS(Unknown, Unknown)Unknown"
+        },
+        {
+          "checker": "SIGMA.excessive_token_lifetime_jsonwebtoken"
+        }
+      ]
+    },
+    {
+      "checker": "SQLI",
+      "coverityCheckerName": [
+        "Coverity.SQLI"
+      ],
+      "function": "!User.js!User.updateStats",
+      "language": "javascript",
+      "subType": "core_javascript",
+      "issueType": "sigma.sqli",
+      "events": [
+        {
+          "description": "req.body is a source of tainted data",
+          "line": 88,
+          "main": false,
+          "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/routes/stats.js",
+          "tag": "Sigma event",
+          "linkURL": "",
+          "linkText": ""
+        },
+        {
+          "description": "assigning to difficulty",
+          "line": 88,
+          "main": false,
+          "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/routes/stats.js",
+          "tag": "Sigma event",
+          "linkURL": "",
+          "linkText": ""
+        },
+        {
+          "description": "calling !User.js!User::updateStats sinks difficulty",
+          "line": 90,
+          "main": false,
+          "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/routes/stats.js",
+          "tag": "Sigma event",
+          "linkURL": "",
+          "linkText": ""
+        },
+        {
+          "description": "assigning to difficultyKey",
+          "line": 125,
+          "main": false,
+          "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/models/User.js",
+          "tag": "Sigma event",
+          "linkURL": "",
+          "linkText": ""
+        },
+        {
+          "description": "The software constructs all or part of an SQL command using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the intended SQL command when it is sent to a downstream component.",
+          "line": 151,
+          "main": true,
+          "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/models/User.js",
+          "tag": "Sigma main event",
+          "linkURL": "",
+          "linkText": ""
+        },
+        {
+          "description": "Use one of the following methods: Use a query-preparation API to safely construct the SQL query containing user-supplied values. Only concatenate a user-supplied value into a query if it has been checked against an allow list of safe string values, or if it must be a Boolean or numeric type.",
+          "line": 151,
+          "main": false,
+          "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/models/User.js",
+          "tag": "remediation",
+          "linkURL": "",
+          "linkText": ""
+        }
+      ],
+      "extra": "\"updateStats\",User:\"body\",req",
+      "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/models/User.js",
+      "subcategory": "core_javascript",
+      "properties": {
+        "category": "Sigma",
+        "impact": "High",
+        "issueKind": "SECURITY",
+        "localEffect": "",
+        "longDescription": "The software constructs all or part of an SQL command using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the intended SQL command when it is sent to a downstream component.",
+        "type": "SQL Injection",
+        "cwe": 89
+      },
+      "antecedentMerges": [
+        {
+          "checker": "SIGMA.sqli",
+          "function": "!<placeholder>!User::updateStats(User, Unknown, Unknown, Unknown, Unknown)Unknown",
+          "extra": "SqlConcatupdateStatsHttpbodyreq"
+        },
+        {
+          "checker": "SIGMA.sqli_core_javascript"
+        }
+      ]
+    },
+    {
+      "checker": "SQLI",
+      "coverityCheckerName": [
+        "Coverity.SQLI"
+      ],
+      "function": "!User.js!User.updateStats",
+      "language": "javascript",
+      "subType": "core_javascript",
+      "issueType": "sigma.sqli",
+      "events": [
+        {
+          "description": "req.body is a source of tainted data",
+          "line": 88,
+          "main": false,
+          "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/routes/stats.js",
+          "tag": "Sigma event",
+          "linkURL": "",
+          "linkText": ""
+        },
+        {
+          "description": "assigning to difficulty",
+          "line": 88,
+          "main": false,
+          "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/routes/stats.js",
+          "tag": "Sigma event",
+          "linkURL": "",
+          "linkText": ""
+        },
+        {
+          "description": "calling !User.js!User::updateStats sinks difficulty",
+          "line": 90,
+          "main": false,
+          "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/routes/stats.js",
+          "tag": "Sigma event",
+          "linkURL": "",
+          "linkText": ""
+        },
+        {
+          "description": "assigning to difficultyKey",
+          "line": 125,
+          "main": false,
+          "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/models/User.js",
+          "tag": "Sigma event",
+          "linkURL": "",
+          "linkText": ""
+        },
+        {
+          "description": "The software constructs all or part of an SQL command using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the intended SQL command when it is sent to a downstream component.",
+          "line": 152,
+          "main": true,
+          "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/models/User.js",
+          "tag": "Sigma main event",
+          "linkURL": "",
+          "linkText": ""
+        },
+        {
+          "description": "Use one of the following methods: Use a query-preparation API to safely construct the SQL query containing user-supplied values. Only concatenate a user-supplied value into a query if it has been checked against an allow list of safe string values, or if it must be a Boolean or numeric type.",
+          "line": 152,
+          "main": false,
+          "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/models/User.js",
+          "tag": "remediation",
+          "linkURL": "",
+          "linkText": ""
+        }
+      ],
+      "extra": "\"updateStats\",User:\"body\",req",
+      "file": "/Users/gonz/Code/VibeCoding/TicTaoToe/backend/models/User.js",
+      "subcategory": "core_javascript",
+      "properties": {
+        "category": "Sigma",
+        "impact": "High",
+        "issueKind": "SECURITY",
+        "localEffect": "",
+        "longDescription": "The software constructs all or part of an SQL command using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the intended SQL command when it is sent to a downstream component.",
+        "type": "SQL Injection",
+        "cwe": 89
+      },
+      "antecedentMerges": [
+        {
+          "checker": "SIGMA.sqli",
+          "function": "!<placeholder>!User::updateStats(User, Unknown, Unknown, Unknown, Unknown)Unknown",
+          "extra": "SqlConcatupdateStatsHttpbodyreq"
+        },
+        {
+          "checker": "SIGMA.sqli_core_javascript"
+        }
+      ]
+    }
+  ],
+  "scan_info": {
+    "enabled_checker_names": [
+      "DOM_XSS",
+      "EL_INJECTION",
+      "HEADER_INJECTION",
+      "JAVA_CODE_INJECTION",
+      "JCR_INJECTION",
+      "LDAP_INJECTION",
+      "NOSQL_QUERY_INJECTION",
+      "OGNL_INJECTION",
+      "OPEN_REDIRECT",
+      "OS_CMD_INJECTION",
+      "PATH_MANIPULATION",
+      "REGEX_INJECTION",
+      "SCRIPT_CODE_INJECTION",
+      "SENSITIVE_DATA_LEAK",
+      "SESSION_FIXATION",
+      "SIGMA.access_control_disabled",
+      "SIGMA.access_to_secret",
+      "SIGMA.admin_access_enabled",
+      "SIGMA.admin_dashboard_publicly_accessible",
+      "SIGMA.alias_ip_disabled",
+      "SIGMA.allow_all_authz_policy",
+      "SIGMA.allow_non_strict_processing",
+      "SIGMA.allow_self_signed_certificate",
+      "SIGMA.always_remember_me_enabled",
+      "SIGMA.anonymous_access_enabled",
+      "SIGMA.anti_spoofing_disabled",
+      "SIGMA.api_exposes_refresh_token",
+      "SIGMA.api_key_auth_enabled",
+      "SIGMA.api_key_in_query_string",
+      "SIGMA.apparmour_default_configuration_override",
+      "SIGMA.audio_recording_enabled",
+      "SIGMA.automatic_key_rotation_disabled",
+      "SIGMA.automatic_os_upgrade_disabled",
+      "SIGMA.automatic_repair_disabled",
+      "SIGMA.automatic_upgrade_disabled",
+      "SIGMA.automounting_service_account_token",
+      "SIGMA.azure_ad_authentication_disabled",
+      "SIGMA.azure_ad_managed_identities_disabled",
+      "SIGMA.backups_allowed",
+      "SIGMA.basic_auth_enabled",
+      "SIGMA.biometric_authentication_protection_disabled",
+      "SIGMA.broad_domain_attribute_cookie",
+      "SIGMA.broad_filesystem_access",
+      "SIGMA.cache_ttl_too_long",
+      "SIGMA.cbc_insecure_padding",
+      "SIGMA.certificate_rotation_disabled",
+      "SIGMA.certificate_verification_disabled",
+      "SIGMA.circuit_breaker_disabled",
+      "SIGMA.client_store_info_leak",
+      "SIGMA.cloud_database_deletion_protection_disabled",
+      "SIGMA.cloud_gateway_publicly_accessible",
+      "SIGMA.cloud_object_lock_disabled",
+      "SIGMA.cloud_resource_assigned_public_ip",
+      "SIGMA.cloud_resource_publicly_accessible",
+      "SIGMA.cloud_service_authn_disabled",
+      "SIGMA.cloud_service_authz_disabled",
+      "SIGMA.cloud_storage_allows_public_config",
+      "SIGMA.cloud_storage_default_allow_all",
+      "SIGMA.cloud_storage_encryption_disabled",
+      "SIGMA.cloud_storage_publicly_accessible",
+      "SIGMA.confidential_computing_disabled",
+      "SIGMA.config_browser_plugin_enabled",
+      "SIGMA.conflicting_names",
+      "SIGMA.connection_timeout_disabled",
+      "SIGMA.container_access_to_host_filesystem",
+      "SIGMA.container_daemon_socket_exposed",
+      "SIGMA.container_empty_security_context",
+      "SIGMA.container_filesystem_write",
+      "SIGMA.container_hostport_binding",
+      "SIGMA.container_insecure_bind_address",
+      "SIGMA.container_mapped_to_privileged_port",
+      "SIGMA.container_missing_cpu_limit",
+      "SIGMA.container_missing_memory_limit",
+      "SIGMA.container_privilege_escalation_allowed",
+      "SIGMA.container_requesting_net_raw",
+      "SIGMA.container_requesting_sys_admin",
+      "SIGMA.container_running_as_root",
+      "SIGMA.container_sharing_host_ipc_namespace",
+      "SIGMA.container_sharing_host_network_namespace",
+      "SIGMA.container_sharing_host_pid_namespace",
+      "SIGMA.container_sharing_mount_volumes",
+      "SIGMA.container_storing_secret_in_environment_variable",
+      "SIGMA.container_sudo_usage",
+      "SIGMA.content_isolation_disabled",
+      "SIGMA.content_security_policy_disabled",
+      "SIGMA.cookie_logging_enabled",
+      "SIGMA.cookie_session_signing_disabled",
+      "SIGMA.cors_configured_globally",
+      "SIGMA.cors_no_credentials_permissive_origin",
+      "SIGMA.cors_origin_string",
+      "SIGMA.cors_preflight_age_too_long",
+      "SIGMA.cors_with_credentials_all_origin",
+      "SIGMA.cors_with_credentials_http_origin",
+      "SIGMA.cors_with_credentials_null_origin",
+      "SIGMA.cors_with_credentials_subdomain_origin",
+      "SIGMA.credentials_validation_disabled",
+      "SIGMA.credentials_without_keychain_protection",
+      "SIGMA.csp_frame_ancestors_disabled",
+      "SIGMA.csp_mixed_content",
+      "SIGMA.csp_permissive_source",
+      "SIGMA.csp_unsafe_eval",
+      "SIGMA.csp_unsafe_inline",
+      "SIGMA.csrf",
+      "SIGMA.csrf_protection_disabled",
+      "SIGMA.custom_cryptography",
+      "SIGMA.custom_keyboards_enabled",
+      "SIGMA.custom_resource_in_default_namespace",
+      "SIGMA.dangerous_oauth2_implicit_flow",
+      "SIGMA.dangerous_ropc_flow",
+      "SIGMA.dangerously_exposed_interface",
+      "SIGMA.data_exfiltration_protection_disabled",
+      "SIGMA.data_mask_obfuscation_disabled",
+      "SIGMA.data_sent_to_external_server",
+      "SIGMA.database_encryption_disabled",
+      "SIGMA.database_integrity_protection_disabled",
+      "SIGMA.database_repair_mode_enabled",
+      "SIGMA.ddos_protection_disabled",
+      "SIGMA.debug_enabled",
+      "SIGMA.debug_logging_enabled",
+      "SIGMA.default_allow_all_authz_policy",
+      "SIGMA.default_service_account_enabled",
+      "SIGMA.deletion_protection_disabled",
+      "SIGMA.deprecated_component_used",
+      "SIGMA.deprecated_http_client",
+      "SIGMA.deprecated_runtime_version",
+      "SIGMA.deprecated_xss_header",
+      "SIGMA.dev_mode_enabled",
+      "SIGMA.digest_auth_enabled",
+      "SIGMA.disk_encryption_disabled",
+      "SIGMA.dns_prefetch_control_disabled",
+      "SIGMA.dnssec_disabled",
+      "SIGMA.drop_invalid_header_disabled",
+      "SIGMA.duplicate_validation_forms",
+      "SIGMA.dynamic_method_invocation",
+      "SIGMA.dynamically_loading_extensions_enabled",
+      "SIGMA.el_injection",
+      "SIGMA.element_any",
+      "SIGMA.empty_encryption_key",
+      "SIGMA.empty_password",
+      "SIGMA.empty_salt",
+      "SIGMA.empty_signing_key",
+      "SIGMA.encryption_disabled",
+      "SIGMA.excessive_auth_attempts",
+      "SIGMA.excessive_connection_timeout",
+      "SIGMA.excessive_http_buffer_size",
+      "SIGMA.excessive_key_rotation_period",
+      "SIGMA.excessive_memory_limit",
+      "SIGMA.excessive_request_retries",
+      "SIGMA.excessive_request_size",
+      "SIGMA.excessive_session_lifetime",
+      "SIGMA.excessive_token_lifetime",
+      "SIGMA.excessive_ttl",
+      "SIGMA.expect_ct_disabled",
+      "SIGMA.experimental_features_enabled",
+      "SIGMA.exposed_directory_listing",
+      "SIGMA.exposed_privileged_account",
+      "SIGMA.exposed_secret",
+      "SIGMA.expression_escaping_disabled",
+      "SIGMA.external_storage_used",
+      "SIGMA.file_data_unprotected_on_device",
+      "SIGMA.file_header_crc_disabled",
+      "SIGMA.file_upload_misconfiguration",
+      "SIGMA.file_upload_misconfiguration_of_fields",
+      "SIGMA.file_upload_misconfiguration_of_file_path",
+      "SIGMA.file_upload_misconfiguration_of_filesize",
+      "SIGMA.file_upload_misconfiguration_of_safe_file_names",
+      "SIGMA.file_upload_misconfiguration_of_storage",
+      "SIGMA.file_upload_misconfiguration_of_temp_files",
+      "SIGMA.full_table_scan",
+      "SIGMA.gateway_exposes_all_hosts",
+      "SIGMA.general_pasteboard_used",
+      "SIGMA.geo_redundant_backup_disabled",
+      "SIGMA.graphiql_enabled",
+      "SIGMA.hardcoded_remember_me_key",
+      "SIGMA.hardcoded_secret",
+      "SIGMA.hardcoded_value",
+      "SIGMA.hardware_backed_security_disabled",
+      "SIGMA.healthcheck_disabled",
+      "SIGMA.hide_powered_by_disabled",
+      "SIGMA.host_header_validation_disabled",
+      "SIGMA.hpkp_max_age_too_long",
+      "SIGMA.hpkp_report_uri_missing_tls",
+      "SIGMA.hsts_disabled",
+      "SIGMA.hsts_http_header_short_max_age",
+      "SIGMA.hsts_http_header_subdomains_disabled",
+      "SIGMA.http_firewall_allow_any_http_method",
+      "SIGMA.http_firewall_allows_special_char",
+      "SIGMA.http_firewall_insecure_default",
+      "SIGMA.http_header_validation_disabled",
+      "SIGMA.http_method_missing_authz",
+      "SIGMA.http_verb_tampering_method_inclusion",
+      "SIGMA.http_verb_tampering_method_omission",
+      "SIGMA.ie_no_open_disabled",
+      "SIGMA.image_scanning_disabled",
+      "SIGMA.immutable_tag_disabled",
+      "SIGMA.improper_use_of_add_command",
+      "SIGMA.improper_use_of_symmetric_cryptography",
+      "SIGMA.incomplete_credential_removal",
+      "SIGMA.infrastructure_encryption_disabled",
+      "SIGMA.insecure_active_user_switch",
+      "SIGMA.insecure_argon2_parameters",
+      "SIGMA.insecure_block_cipher_algorithm",
+      "SIGMA.insecure_block_cipher_mode",
+      "SIGMA.insecure_cipher",
+      "SIGMA.insecure_cookie_storage",
+      "SIGMA.insecure_credential_use",
+      "SIGMA.insecure_dataframe",
+      "SIGMA.insecure_direct_object_reference",
+      "SIGMA.insecure_file_permission",
+      "SIGMA.insecure_iframe_sandbox",
+      "SIGMA.insecure_ipc",
+      "SIGMA.insecure_network_bind",
+      "SIGMA.insecure_permission_on_exported_component",
+      "SIGMA.insecure_random",
+      "SIGMA.insecure_random_seed",
+      "SIGMA.insecure_referrer_policy",
+      "SIGMA.insecure_samesite_attribute_cookie",
+      "SIGMA.insecure_stream_cipher_algorithm",
+      "SIGMA.insecure_temporary_file",
+      "SIGMA.insecure_tls_cipher_suite",
+      "SIGMA.insecure_tls_renegotiation",
+      "SIGMA.insecure_tls_version",
+      "SIGMA.insecure_xss_filter",
+      "SIGMA.insufficient_asymmetric_key_size",
+      "SIGMA.insufficient_brute_force_protection",
+      "SIGMA.insufficient_log_retention",
+      "SIGMA.insufficient_logging",
+      "SIGMA.insufficient_password_hash_iterations",
+      "SIGMA.insufficient_password_hash_key_length",
+      "SIGMA.insufficient_password_hash_salt_length",
+      "SIGMA.insufficient_presigned_url_timeout",
+      "SIGMA.insufficient_soft_delete_retention",
+      "SIGMA.insufficient_symmetric_key_size",
+      "SIGMA.insufficient_token_entropy",
+      "SIGMA.introspection_enabled",
+      "SIGMA.ip_forwarding_enabled",
+      "SIGMA.iptable_synchronization_disabled",
+      "SIGMA.javascript_code_in_description",
+      "SIGMA.jwt_algorithm_none",
+      "SIGMA.jwt_ignored_expiration_time",
+      "SIGMA.jwt_ignored_start_time",
+      "SIGMA.jwt_no_claims_validation",
+      "SIGMA.jwt_non_expiring_token",
+      "SIGMA.jwt_revoke_missing",
+      "SIGMA.jwt_untrusted_decode",
+      "SIGMA.kernel_protection_disabled",
+      "SIGMA.keyboard_cache_enabled",
+      "SIGMA.keychain_data_unprotected_after_device_powered_on",
+      "SIGMA.keychain_data_unprotected_after_first_login",
+      "SIGMA.keychain_data_unprotected_passcode_not_set",
+      "SIGMA.kms_encryption_service_disabled",
+      "SIGMA.kubernetes_dashboard_enabled",
+      "SIGMA.ldap_anonymous_authentication",
+      "SIGMA.ldap_entry_poisoning",
+      "SIGMA.least_privilege_violation",
+      "SIGMA.legacy_attribute_based_access_control",
+      "SIGMA.local_infile_enabled",
+      "SIGMA.location_tracking_enabled",
+      "SIGMA.log_file_validation_disabled",
+      "SIGMA.log_monitoring_disabled",
+      "SIGMA.logging_disabled",
+      "SIGMA.logging_request_parameters",
+      "SIGMA.login_over_http",
+      "SIGMA.lossy_encoding",
+      "SIGMA.malicious_url",
+      "SIGMA.markdown_allow_dangerous_html",
+      "SIGMA.message_encryption_disabled",
+      "SIGMA.microservice_authn_disabled",
+      "SIGMA.middleware_applied_globally",
+      "SIGMA.misconfigured_oauth2",
+      "SIGMA.missing_default_response_object",
+      "SIGMA.missing_exported_attribute",
+      "SIGMA.missing_global_exception_handler",
+      "SIGMA.missing_high_availability_support",
+      "SIGMA.missing_httponly_attribute",
+      "SIGMA.missing_httponly_attribute_csrf_cookie",
+      "SIGMA.missing_httponly_attribute_session_cookie",
+      "SIGMA.missing_iframe_sandbox",
+      "SIGMA.missing_load_balancer",
+      "SIGMA.missing_mfa",
+      "SIGMA.missing_min_sdk_version",
+      "SIGMA.missing_mtls",
+      "SIGMA.missing_network_security_policy",
+      "SIGMA.missing_perfect_forward_secrecy",
+      "SIGMA.missing_permission_on_exported_component",
+      "SIGMA.missing_samesite_attribute",
+      "SIGMA.missing_samesite_attribute_csrf_cookie",
+      "SIGMA.missing_samesite_attribute_session_cookie",
+      "SIGMA.missing_secure_attribute",
+      "SIGMA.missing_secure_attribute_csrf_cookie",
+      "SIGMA.missing_secure_attribute_remember_me_cookie",
+      "SIGMA.missing_secure_attribute_session_cookie",
+      "SIGMA.missing_security_constraint",
+      "SIGMA.missing_servlet_mapping",
+      "SIGMA.missing_target_sdk_version",
+      "SIGMA.missing_tls",
+      "SIGMA.missing_uses_sdk_version",
+      "SIGMA.missing_vpc",
+      "SIGMA.missing_x_frame_options_header",
+      "SIGMA.mixed_content_allowed",
+      "SIGMA.multi_region_configuration_aggregation_disabled",
+      "SIGMA.multi_region_logging_disabled",
+      "SIGMA.no_complexity_limit",
+      "SIGMA.no_depth_limit",
+      "SIGMA.no_password_change_on_first_login",
+      "SIGMA.no_rate_limiting",
+      "SIGMA.no_sniff_disabled",
+      "SIGMA.non_production_api_endpoint",
+      "SIGMA.non_production_route",
+      "SIGMA.null_cipher_used",
+      "SIGMA.oauth2_pkce_plaintext_challenge",
+      "SIGMA.oauth2_scope_in_token_request",
+      "SIGMA.open_smtp_relay",
+      "SIGMA.optimized_image_not_used",
+      "SIGMA.outdated_target_sdk_version",
+      "SIGMA.outdated_version_used",
+      "SIGMA.overwrite_unintended_variables",
+      "SIGMA.parameter_merging_enabled",
+      "SIGMA.parameters_validation_disabled",
+      "SIGMA.password_change_disallowed",
+      "SIGMA.password_change_without_old_password",
+      "SIGMA.password_stored_without_hash",
+      "SIGMA.permissive_intent_list",
+      "SIGMA.permissive_navigation_list",
+      "SIGMA.permissive_network_list",
+      "SIGMA.permitted_cross_domain_policies_disabled",
+      "SIGMA.persistent_cookie",
+      "SIGMA.plaintext_storage_sensitive_data",
+      "SIGMA.predictable_secret",
+      "SIGMA.privileged_connection_allowed",
+      "SIGMA.privileged_container_allowed",
+      "SIGMA.profiling_enabled",
+      "SIGMA.project_encryption_disabled",
+      "SIGMA.public_github_repository",
+      "SIGMA.publicly_accessible_serial_port_enabled",
+      "SIGMA.publicly_writable_directories_used",
+      "SIGMA.query_encryption_disabled",
+      "SIGMA.query_logging_enabled",
+      "SIGMA.referrer_policy_disabled",
+      "SIGMA.remote_access_via_guest_account",
+      "SIGMA.remote_application_enabled",
+      "SIGMA.remote_execution_enabled",
+      "SIGMA.remote_file_inclusion",
+      "SIGMA.request_allows_any_media_type",
+      "SIGMA.request_logging_enabled",
+      "SIGMA.request_tracing_disabled",
+      "SIGMA.request_validation_disabled",
+      "SIGMA.response_cache_encryption_disabled",
+      "SIGMA.response_cache_used_without_validation",
+      "SIGMA.response_caching_enabled",
+      "SIGMA.response_logging_enabled",
+      "SIGMA.reverse_tabnabbing",
+      "SIGMA.root_path_attribute_cookie",
+      "SIGMA.rsa_no_padding",
+      "SIGMA.safe_browsing_options_disabled",
+      "SIGMA.sasl_plain_enabled",
+      "SIGMA.screenshot_data_leak",
+      "SIGMA.script_checks_enabled",
+      "SIGMA.script_timeout_too_long",
+      "SIGMA.seccomp_disabled",
+      "SIGMA.security_alerts_disabled",
+      "SIGMA.security_alerts_notification_disabled",
+      "SIGMA.security_scanning_disabled",
+      "SIGMA.selinux_default_configuration_override",
+      "SIGMA.sensitive_data_in_cookie",
+      "SIGMA.sensitive_data_in_query_string",
+      "SIGMA.sensitive_data_in_response",
+      "SIGMA.server_side_request_unrestricted",
+      "SIGMA.service_account_lookup_disabled",
+      "SIGMA.session_cookie_misuse",
+      "SIGMA.session_fixation_protection_disabled",
+      "SIGMA.shared_preferences_data_exposure",
+      "SIGMA.shell_missing_pipefail",
+      "SIGMA.shielded_nodes_disabled",
+      "SIGMA.shielded_vm_disabled",
+      "SIGMA.socket_accepts_all_origins",
+      "SIGMA.ssh_port_exposed",
+      "SIGMA.ssh_publicly_accessible",
+      "SIGMA.ssl_pinning_disabled",
+      "SIGMA.ssrf_with_untrusted_callback",
+      "SIGMA.state_changing_get_request",
+      "SIGMA.static_iv",
+      "SIGMA.static_non_expiring_token",
+      "SIGMA.storage_versioning_disabled",
+      "SIGMA.stripe_validation_disabled",
+      "SIGMA.synchronized_credentials",
+      "SIGMA.tag_authorization_disabled",
+      "SIGMA.termination_protection_disabled",
+      "SIGMA.third_party_trusted",
+      "SIGMA.tiller_service_exposed",
+      "SIGMA.trace_mode_enabled",
+      "SIGMA.trojan_source",
+      "SIGMA.unauthenticated_readonly_access",
+      "SIGMA.unbounded_occurrences",
+      "SIGMA.uncontrolled_search_path",
+      "SIGMA.undefined_oauth2_scope",
+      "SIGMA.unfettered_resource_loading",
+      "SIGMA.unfiltered_html_allowed",
+      "SIGMA.unlimited_concurrent_sessions",
+      "SIGMA.unprotected_admin_operation",
+      "SIGMA.unprotected_master_key",
+      "SIGMA.unreliable_root_jailbreak_detection",
+      "SIGMA.unrestricted_database_access",
+      "SIGMA.unrestricted_egress",
+      "SIGMA.unrestricted_ingress",
+      "SIGMA.unrestricted_postmessage_target",
+      "SIGMA.unsafe_authentication_filter",
+      "SIGMA.unsafe_eval",
+      "SIGMA.unsafe_file_inclusion",
+      "SIGMA.unsafe_http_method",
+      "SIGMA.unsafe_innerhtml_manipulation",
+      "SIGMA.unsafe_min_os_version",
+      "SIGMA.unsafe_min_sdk_version",
+      "SIGMA.unsafe_os_command",
+      "SIGMA.unsafe_receipt_verification",
+      "SIGMA.unsafe_session_storage",
+      "SIGMA.unsafe_sms",
+      "SIGMA.unsafe_webview_usage",
+      "SIGMA.unsafe_xml_canonicalization",
+      "SIGMA.unspecified_cipher_transformation",
+      "SIGMA.unspecified_software_version",
+      "SIGMA.unused_form_bean",
+      "SIGMA.unused_security_control",
+      "SIGMA.update_command_runs_in_isolation",
+      "SIGMA.user_namespace_disabled",
+      "SIGMA.vendor_provided_encryption_key",
+      "SIGMA.verbose_error_message",
+      "SIGMA.verbose_server_banner",
+      "SIGMA.view_state_stored_on_client",
+      "SIGMA.vulnerable_software",
+      "SIGMA.waf_disabled",
+      "SIGMA.weak_auth_mechanism",
+      "SIGMA.weak_biometric_authentication",
+      "SIGMA.weak_hash",
+      "SIGMA.weak_password_hash",
+      "SIGMA.weak_password_policy",
+      "SIGMA.weak_security_constraint",
+      "SIGMA.weak_xss_protection",
+      "SIGMA.webview_file_access",
+      "SIGMA.webview_javascript_enabled",
+      "SIGMA.write_using_auxiliary_file",
+      "SIGMA.xml_entity_enabled",
+      "SIGMA.xml_external_entity_enabled",
+      "SIGMA.xss_filter_disabled",
+      "SQLI",
+      "TAINTED_ENVIRONMENT_WITH_EXECUTION",
+      "TRUST_BOUNDARY_VIOLATION",
+      "UNENCRYPTED_SENSITIVE_DATA",
+      "UNKNOWN_LANGUAGE_INJECTION",
+      "UNRESTRICTED_DISPATCH",
+      "UNSAFE_DESERIALIZATION",
+      "UNSAFE_JNI",
+      "UNSAFE_NAMED_QUERY",
+      "UNSAFE_REFLECTION",
+      "URL_MANIPULATION",
+      "XPATH_INJECTION",
+      "XSS"
+    ],
+    "enabled_checker_names_by_language": {
+      "DOM_XSS": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "EL_INJECTION": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "HEADER_INJECTION": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "JAVA_CODE_INJECTION": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "JCR_INJECTION": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "LDAP_INJECTION": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "NOSQL_QUERY_INJECTION": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "OGNL_INJECTION": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "OPEN_REDIRECT": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "OS_CMD_INJECTION": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "PATH_MANIPULATION": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "REGEX_INJECTION": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SCRIPT_CODE_INJECTION": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SENSITIVE_DATA_LEAK": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SESSION_FIXATION": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.access_control_disabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.access_to_secret": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.admin_access_enabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.admin_dashboard_publicly_accessible": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.alias_ip_disabled": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.allow_all_authz_policy": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.allow_non_strict_processing": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.allow_self_signed_certificate": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.always_remember_me_enabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.anonymous_access_enabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.anti_spoofing_disabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.api_exposes_refresh_token": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.api_key_auth_enabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.api_key_in_query_string": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.apparmour_default_configuration_override": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.audio_recording_enabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.automatic_key_rotation_disabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.automatic_os_upgrade_disabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.automatic_repair_disabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.automatic_upgrade_disabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.automounting_service_account_token": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.azure_ad_authentication_disabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.azure_ad_managed_identities_disabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.backups_allowed": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.basic_auth_enabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.biometric_authentication_protection_disabled": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.broad_domain_attribute_cookie": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.broad_filesystem_access": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.cache_ttl_too_long": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.cbc_insecure_padding": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.certificate_rotation_disabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.certificate_verification_disabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.circuit_breaker_disabled": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.client_store_info_leak": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.cloud_database_deletion_protection_disabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.cloud_gateway_publicly_accessible": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.cloud_object_lock_disabled": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.cloud_resource_assigned_public_ip": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.cloud_resource_publicly_accessible": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.cloud_service_authn_disabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.cloud_service_authz_disabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.cloud_storage_allows_public_config": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.cloud_storage_default_allow_all": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.cloud_storage_encryption_disabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.cloud_storage_publicly_accessible": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.confidential_computing_disabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.config_browser_plugin_enabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.conflicting_names": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.connection_timeout_disabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.container_access_to_host_filesystem": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.container_cpu_share_unlimited": {
+        "disabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.container_daemon_socket_exposed": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.container_empty_security_context": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.container_excessive_restart_times": {
+        "disabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.container_filesystem_write": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.container_hostport_binding": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.container_insecure_bind_address": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.container_mapped_to_privileged_port": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.container_missing_cpu_limit": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.container_missing_memory_limit": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.container_missing_pids_limit": {
+        "disabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.container_privilege_escalation_allowed": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.container_requesting_net_raw": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.container_requesting_sys_admin": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.container_running_as_root": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.container_sharing_host_ipc_namespace": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.container_sharing_host_network_namespace": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.container_sharing_host_pid_namespace": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.container_sharing_mount_volumes": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.container_storing_secret_in_environment_variable": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.container_sudo_usage": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.content_isolation_disabled": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.content_security_policy_disabled": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.cookie_logging_enabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.cookie_session_signing_disabled": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.cors_configured_globally": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.cors_no_credentials_permissive_origin": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.cors_origin_string": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.cors_preflight_age_too_long": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.cors_with_credentials_all_origin": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.cors_with_credentials_http_origin": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.cors_with_credentials_null_origin": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.cors_with_credentials_subdomain_origin": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.credentials_validation_disabled": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.credentials_without_keychain_protection": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.csp_frame_ancestors_disabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.csp_mixed_content": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.csp_permissive_source": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.csp_unsafe_eval": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.csp_unsafe_inline": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.csrf": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.csrf_protection_disabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.custom_cryptography": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.custom_keyboards_enabled": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.custom_resource_in_default_namespace": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.dangerous_oauth2_implicit_flow": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.dangerous_ropc_flow": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.dangerously_exposed_interface": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.data_exfiltration_protection_disabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.data_mask_obfuscation_disabled": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.data_sent_to_external_server": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.database_encryption_disabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.database_integrity_protection_disabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.database_repair_mode_enabled": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.ddos_protection_disabled": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.debug_enabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.debug_logging_enabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.default_allow_all_authz_policy": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.default_service_account_enabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.deletion_protection_disabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.deprecated_component_used": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.deprecated_http_client": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.deprecated_runtime_version": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.deprecated_xss_header": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.dev_mode_enabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.digest_auth_enabled": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.disk_encryption_disabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.dns_prefetch_control_disabled": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.dnssec_disabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.drop_invalid_header_disabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.duplicate_validation_forms": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.dynamic_method_invocation": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.dynamically_loading_extensions_enabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.el_injection": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.element_any": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.empty_encryption_key": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.empty_password": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.empty_salt": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.empty_signing_key": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.encryption_disabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.excessive_auth_attempts": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.excessive_connection_timeout": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.excessive_http_buffer_size": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.excessive_ingress": {
+        "disabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.excessive_key_rotation_period": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.excessive_memory_limit": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.excessive_request_retries": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.excessive_request_size": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.excessive_session_lifetime": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.excessive_token_lifetime": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.excessive_ttl": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.expect_ct_disabled": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.experimental_features_enabled": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.exposed_directory_listing": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.exposed_privileged_account": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.exposed_secret": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.expression_escaping_disabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.external_storage_used": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.file_data_unprotected_on_device": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.file_header_crc_disabled": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.file_upload_misconfiguration": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.file_upload_misconfiguration_of_fields": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.file_upload_misconfiguration_of_file_path": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.file_upload_misconfiguration_of_filesize": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.file_upload_misconfiguration_of_safe_file_names": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.file_upload_misconfiguration_of_storage": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.file_upload_misconfiguration_of_temp_files": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.full_table_scan": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.gateway_exposes_all_hosts": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.general_pasteboard_used": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.geo_redundant_backup_disabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.graphiql_enabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.hardcoded_remember_me_key": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.hardcoded_secret": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.hardcoded_value": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.hardware_backed_security_disabled": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.healthcheck_disabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.hide_powered_by_disabled": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.host_header_validation_disabled": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.hpkp_max_age_too_long": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.hpkp_report_uri_missing_tls": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.hsts_disabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.hsts_http_header_short_max_age": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.hsts_http_header_subdomains_disabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.http_firewall_allow_any_http_method": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.http_firewall_allows_special_char": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.http_firewall_insecure_default": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.http_header_validation_disabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.http_method_missing_authz": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.http_verb_tampering_method_inclusion": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.http_verb_tampering_method_omission": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.ie_no_open_disabled": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.image_scanning_disabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.immutable_tag_disabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.improper_use_of_add_command": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.improper_use_of_symmetric_cryptography": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.incomplete_credential_removal": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.infrastructure_encryption_disabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.insecure_active_user_switch": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.insecure_argon2_parameters": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.insecure_block_cipher_algorithm": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.insecure_block_cipher_mode": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.insecure_cipher": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.insecure_cookie_storage": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.insecure_credential_use": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.insecure_dataframe": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.insecure_direct_object_reference": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.insecure_file_permission": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.insecure_iframe_sandbox": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.insecure_ipc": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.insecure_network_bind": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.insecure_permission_on_exported_component": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.insecure_random": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.insecure_random_seed": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.insecure_referrer_policy": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.insecure_samesite_attribute_cookie": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.insecure_stream_cipher_algorithm": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.insecure_temporary_file": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.insecure_tls_cipher_suite": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.insecure_tls_renegotiation": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.insecure_tls_version": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.insecure_xss_filter": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.insufficient_asymmetric_key_size": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.insufficient_brute_force_protection": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.insufficient_log_retention": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.insufficient_logging": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.insufficient_password_hash_iterations": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.insufficient_password_hash_key_length": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.insufficient_password_hash_salt_length": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.insufficient_presigned_url_timeout": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.insufficient_soft_delete_retention": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.insufficient_symmetric_key_size": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.insufficient_token_entropy": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.introspection_enabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.invalid_command_used": {
+        "disabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.ip_forwarding_enabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.iptable_synchronization_disabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.javascript_code_in_description": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.jwt_algorithm_none": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.jwt_ignored_expiration_time": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.jwt_ignored_start_time": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.jwt_no_claims_validation": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.jwt_non_expiring_token": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.jwt_revoke_missing": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.jwt_untrusted_decode": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.kernel_protection_disabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.keyboard_cache_enabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.keychain_data_unprotected_after_device_powered_on": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.keychain_data_unprotected_after_first_login": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.keychain_data_unprotected_passcode_not_set": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.kms_encryption_service_disabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.kubernetes_dashboard_enabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.ldap_anonymous_authentication": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.ldap_entry_poisoning": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.least_privilege_violation": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.legacy_attribute_based_access_control": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.local_infile_enabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.location_tracking_enabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.log_file_validation_disabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.log_monitoring_disabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.logging_disabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.logging_request_parameters": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.login_over_http": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.lossy_encoding": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.malicious_url": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.markdown_allow_dangerous_html": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.message_encryption_disabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.microservice_authn_disabled": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.middleware_applied_globally": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.misconfigured_oauth2": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.missing_default_response_object": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.missing_exported_attribute": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.missing_global_exception_handler": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.missing_high_availability_support": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.missing_httponly_attribute": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.missing_httponly_attribute_csrf_cookie": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.missing_httponly_attribute_session_cookie": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.missing_iframe_sandbox": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.missing_load_balancer": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.missing_mfa": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.missing_min_sdk_version": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.missing_mtls": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.missing_network_security_policy": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.missing_perfect_forward_secrecy": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.missing_permission_on_exported_component": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.missing_samesite_attribute": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.missing_samesite_attribute_csrf_cookie": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.missing_samesite_attribute_session_cookie": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.missing_secure_attribute": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.missing_secure_attribute_csrf_cookie": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.missing_secure_attribute_remember_me_cookie": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.missing_secure_attribute_session_cookie": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.missing_security_constraint": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.missing_servlet_mapping": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.missing_target_sdk_version": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.missing_tls": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.missing_uses_sdk_version": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.missing_vpc": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.missing_x_frame_options_header": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.mixed_content_allowed": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.multi_region_configuration_aggregation_disabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.multi_region_logging_disabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.no_complexity_limit": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.no_depth_limit": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.no_password_change_on_first_login": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.no_rate_limiting": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.no_sniff_disabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.non_production_api_endpoint": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.non_production_route": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.null_cipher_used": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.oauth2_pkce_plaintext_challenge": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.oauth2_scope_in_token_request": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.open_smtp_relay": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.optimized_image_not_used": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.outdated_target_sdk_version": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.outdated_version_used": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.overwrite_unintended_variables": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.parameter_merging_enabled": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.parameters_validation_disabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.password_change_disallowed": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.password_change_without_old_password": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.password_stored_without_hash": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.permissive_intent_list": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.permissive_navigation_list": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.permissive_network_list": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.permitted_cross_domain_policies_disabled": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.persistent_cookie": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.plaintext_storage_sensitive_data": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.predictable_secret": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.privileged_connection_allowed": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.privileged_container_allowed": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.profiling_enabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.project_encryption_disabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.public_github_repository": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.publicly_accessible_serial_port_enabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.publicly_writable_directories_used": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.query_encryption_disabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.query_logging_enabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.referrer_policy_disabled": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.relative_path": {
+        "disabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.remote_access_via_guest_account": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.remote_application_enabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.remote_execution_enabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.remote_file_inclusion": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.request_allows_any_media_type": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.request_logging_enabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.request_tracing_disabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.request_validation_disabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.response_cache_encryption_disabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.response_cache_used_without_validation": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.response_caching_enabled": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.response_logging_enabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.reverse_tabnabbing": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.root_path_attribute_cookie": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.rsa_no_padding": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.safe_browsing_options_disabled": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.sasl_plain_enabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.screenshot_data_leak": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.script_checks_enabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.script_timeout_too_long": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.seccomp_disabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.security_alerts_disabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.security_alerts_notification_disabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.security_scanning_disabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.selinux_default_configuration_override": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.sensitive_data_in_cookie": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.sensitive_data_in_query_string": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.sensitive_data_in_response": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.server_side_request_unrestricted": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.service_account_lookup_disabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.session_cookie_misuse": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.session_fixation_protection_disabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.shared_preferences_data_exposure": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.shell_missing_pipefail": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.shielded_nodes_disabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.shielded_vm_disabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.socket_accepts_all_origins": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.ssh_port_exposed": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.ssh_publicly_accessible": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.ssl_pinning_disabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.ssrf_with_untrusted_callback": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.state_changing_get_request": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.static_iv": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.static_non_expiring_token": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.storage_optimization_disabled": {
+        "disabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.storage_versioning_disabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.stripe_validation_disabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.synchronized_credentials": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.tag_authorization_disabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.termination_protection_disabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.third_party_trusted": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.tiller_service_exposed": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.trace_mode_enabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.trojan_source": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.unauthenticated_readonly_access": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.unbounded_occurrences": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.uncontrolled_search_path": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.undefined_oauth2_scope": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.unfettered_resource_loading": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.unfiltered_html_allowed": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.unlimited_concurrent_sessions": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.unprotected_admin_operation": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.unprotected_master_key": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.unreliable_root_jailbreak_detection": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.unrestricted_database_access": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.unrestricted_egress": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.unrestricted_ingress": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.unrestricted_postmessage_target": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.unsafe_authentication_filter": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.unsafe_eval": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.unsafe_file_inclusion": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.unsafe_http_method": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.unsafe_innerhtml_manipulation": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.unsafe_min_os_version": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.unsafe_min_sdk_version": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.unsafe_os_command": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.unsafe_receipt_verification": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.unsafe_session_storage": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.unsafe_sms": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.unsafe_webview_usage": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.unsafe_xml_canonicalization": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.unspecified_cipher_transformation": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.unspecified_software_version": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.unused_form_bean": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.unused_security_control": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.update_command_runs_in_isolation": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.user_namespace_disabled": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.vendor_provided_encryption_key": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.verbose_error_message": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.verbose_server_banner": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.view_state_stored_on_client": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.vulnerable_software": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.waf_disabled": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.weak_auth_mechanism": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.weak_biometric_authentication": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.weak_hash": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.weak_password_hash": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.weak_password_policy": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.weak_security_constraint": {
+        "enabled": [
+          "Text"
+        ],
+        "unsupported": [
+          "JavaScript"
+        ]
+      },
+      "SIGMA.weak_xss_protection": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.webview_file_access": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.webview_javascript_enabled": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.write_using_auxiliary_file": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.xml_entity_enabled": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "SIGMA.xml_external_entity_enabled": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SIGMA.xss_filter_disabled": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "SQLI": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "TAINTED_ENVIRONMENT_WITH_EXECUTION": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "TRUST_BOUNDARY_VIOLATION": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "UNENCRYPTED_SENSITIVE_DATA": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "UNKNOWN_LANGUAGE_INJECTION": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "UNRESTRICTED_DISPATCH": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "UNSAFE_DESERIALIZATION": {
+        "enabled": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "UNSAFE_JNI": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "UNSAFE_NAMED_QUERY": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "UNSAFE_REFLECTION": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "URL_MANIPULATION": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      },
+      "XPATH_INJECTION": {
+        "unsupported": [
+          "JavaScript",
+          "Text"
+        ]
+      },
+      "XSS": {
+        "enabled": [
+          "JavaScript"
+        ],
+        "unsupported": [
+          "Text"
+        ]
+      }
+    }
+  }
+}

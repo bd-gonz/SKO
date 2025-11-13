@@ -1,0 +1,8 @@
+/Users/gonz/.blackduck/desktop/controller/installedtools/bridge/3.9.2/adapters/polaris-waiter/versions/0.2.88/polaris-waiter /Users/gonz/Code/VibeCoding/TicTaoToe/.bridge/polaris_waiter/data.json
+{"level":"info","logger":"Polaris Waiter","msg":"Waiting for test with assessment type \"SCA(scaPackage)\" and id \"89dd5ce9-4e5d-456d-935b-be27be5d8774\"","time":"2025-11-12 17:53:45.1693 CET"}
+{"level":"info","logger":"Polaris Waiter","msg":"Waiting for test with assessment type \"SAST(sastFull)\" and id \"e23d9285-454b-4951-bf50-46c3a2a4ace6\"","time":"2025-11-12 17:53:45.1695 CET"}
+{"level":"error","logger":"Polaris Waiter","msg":"error while waiting for test with assessment type \"SAST(sastFull)\" and id \"e23d9285-454b-4951-bf50-46c3a2a4ace6\": the artifact uploaded was found unsuccessful","time":"2025-11-12 17:53:45.1696 CET"}
+{"level":"info","logger":"Polaris Waiter","msg":"Polling Test Manager: state of test with assessment type \"SCA(scaPackage)\" and id \"89dd5ce9-4e5d-456d-935b-be27be5d8774\" is \"Waiting for Capture\"","time":"2025-11-12 17:53:45.5842 CET"}
+{"level":"info","logger":"Polaris Waiter","msg":"Polling Test Manager: state of test with assessment type \"SCA(scaPackage)\" and id \"89dd5ce9-4e5d-456d-935b-be27be5d8774\" is \"Scanning \u0026 Publishing\"","time":"2025-11-12 17:53:55.8492 CET"}
+{"level":"info","logger":"Polaris Waiter","msg":"Polling Test Manager: state of test with assessment type \"SCA(scaPackage)\" and id \"89dd5ce9-4e5d-456d-935b-be27be5d8774\" is \"In Progress\"","time":"2025-11-12 17:54:16.4018 CET"}
+{"level":"info","logger":"Polaris Waiter","msg":"test with assessment type \"SCA(scaPackage)\" and id \"89dd5ce9-4e5d-456d-935b-be27be5d8774\" completed successfully","time":"2025-11-12 17:54:26.6735 CET"}
