@@ -5,6 +5,7 @@ require('dotenv').config();
 const { testConnection } = require('./config/database');
 const authRoutes = require('./routes/auth');
 const statsRoutes = require('./routes/stats');
+const adminRoutes = require('./routes/admin');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -26,6 +27,7 @@ app.use((req, res, next) => {
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/stats', statsRoutes);
+app.use('/api/admin', adminRoutes);
 
 // Health check endpoint
 app.get('/api/health', (req, res) => {
@@ -53,6 +55,13 @@ app.get('/', (req, res) => {
                 get: 'GET /api/stats',
                 update: 'POST /api/stats/update',
                 reset: 'POST /api/stats/reset'
+            },
+            admin: {
+                getUsers: 'GET /api/admin/users',
+                createUser: 'POST /api/admin/users',
+                updateUser: 'PUT /api/admin/users/:id',
+                deleteUser: 'DELETE /api/admin/users/:id',
+                getUserStats: 'GET /api/admin/users/:id/stats'
             }
         }
     });

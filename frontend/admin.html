@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Console - Tic Tac Toe</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="admin-container">
+        <!-- Header -->
+        <header class="admin-header">
+            <div class="header-content">
+                <h1>🎮 Admin Console</h1>
+                <div class="header-actions">
+                    <span class="admin-user">Admin: <span id="admin-username"></span></span>
+                    <button id="back-to-game" class="btn btn-secondary">Back to Game</button>
+                    <button id="admin-logout" class="btn btn-danger">Logout</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="admin-main">
+            <!-- Stats Overview -->
+            <section class="stats-overview">
+                <div class="stat-card">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-info">
+                        <h3>Total Users</h3>
+                        <p class="stat-value" id="total-users">0</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🎯</div>
+                    <div class="stat-info">
+                        <h3>Total Games</h3>
+                        <p class="stat-value" id="total-games-all">0</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">👑</div>
+                    <div class="stat-info">
+                        <h3>Admin Users</h3>
+                        <p class="stat-value" id="admin-users">0</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- User Management -->
+            <section class="user-management">
+                <div class="section-header">
+                    <h2>User Management</h2>
+                    <button id="add-user-btn" class="btn btn-primary">
+                        <span>➕</span> Add New User
+                    </button>
+                </div>
+
+                <!-- Search and Filter -->
+                <div class="search-bar">
+                    <input type="text" id="search-users" placeholder="Search users by username or email...">
+                    <select id="filter-admin">
+                        <option value="all">All Users</option>
+                        <option value="admin">Admins Only</option>
+                        <option value="regular">Regular Users</option>
+                    </select>
+                </div>
+
+                <!-- Users Table -->
+                <div class="table-container">
+                    <table class="users-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Username</th>
+                                <th>Email</th>
+                                <th>Role</th>
+                                <th>Games</th>
+                                <th>Wins</th>
+                                <th>Win Rate</th>
+                                <th>Created</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="users-table-body">
+                            <tr>
+                                <td colspan="9" class="loading">Loading users...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Add/Edit User Modal -->
+    <div class="modal" id="user-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">Add New User</h2>
+                <span class="close-modal" id="close-user-modal">&times;</span>
+            </div>
+            <form id="user-form">
+                <div class="form-group">
+                    <label for="user-username">Username:</label>
+                    <input type="text" id="user-username" name="username" required minlength="3" maxlength="20">
+                </div>
+                <div class="form-group">
+                    <label for="user-email">Email:</label>
+                    <input type="email" id="user-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="user-password">Password:</label>
+                    <input type="password" id="user-password" name="password" minlength="6">
+                    <small class="form-hint" id="password-hint">Leave blank to keep current password (edit mode)</small>
+                </div>
+                <div class="form-group checkbox-group">
+                    <label>
+                        <input type="checkbox" id="user-is-admin" name="is_admin">
+                        <span>Admin User</span>
+                    </label>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" id="cancel-user-form">Cancel</button>
+                    <button type="submit" class="btn btn-primary" id="submit-user-form">Save User</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Delete Confirmation Modal -->
+    <div class="modal" id="delete-modal">
+        <div class="modal-content modal-small">
+            <div class="modal-header">
+                <h2>Confirm Delete</h2>
+                <span class="close-modal" id="close-delete-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to delete user <strong id="delete-username"></strong>?</p>
+                <p class="warning">This action cannot be undone!</p>
+            </div>
+            <div class="form-actions">
+                <button type="button" class="btn btn-secondary" id="cancel-delete">Cancel</button>
+                <button type="button" class="btn btn-danger" id="confirm-delete">Delete User</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- User Stats Modal -->
+    <div class="modal" id="stats-modal">
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h2>User Statistics - <span id="stats-username"></span></h2>
+                <span class="close-modal" id="close-stats-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <h4>Total Games</h4>
+                        <p id="user-total-games">0</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>Total Wins</h4>
+                        <p id="user-total-wins">0</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>Total Losses</h4>
+                        <p id="user-total-losses">0</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>Total Draws</h4>
+                        <p id="user-total-draws">0</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>Win Rate</h4>
+                        <p id="user-win-rate">0%</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>Best Streak</h4>
+                        <p id="user-best-streak">0</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>Easy AI (W/L)</h4>
+                        <p id="user-easy-stats">0/0</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>Medium AI (W/L)</h4>
+                        <p id="user-medium-stats">0/0</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>Hard AI (W/L)</h4>
+                        <p id="user-hard-stats">0/0</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>Total Playtime</h4>
+                        <p id="user-playtime">0m</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <span id="toast-message"></span>
+    </div>
+
+    <script src="api.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>
