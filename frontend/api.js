@@ -113,4 +113,4 @@ class API {
 }
 
 // Export singleton instance
-const api = new API();
+window.api = new API();

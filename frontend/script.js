@@ -30,6 +30,7 @@ class UserManager {
         document.getElementById('register-btn').addEventListener('click', () => this.showAuthModal('register'));
         document.getElementById('logout-btn').addEventListener('click', () => this.logout());
         document.getElementById('view-stats-btn').addEventListener('click', () => this.showStatsModal());
+        document.getElementById('admin-btn').addEventListener('click', () => this.openAdminConsole());
         
         // Modal controls
         document.getElementById('close-auth').addEventListener('click', () => this.hideAuthModal());
@@ -207,6 +208,14 @@ class UserManager {
         document.getElementById('auth-buttons').style.display = 'none';
         document.getElementById('user-info').style.display = 'flex';
         document.getElementById('current-user-name').textContent = this.currentUser.username;
+        
+        // Show admin button if user is admin
+        const adminBtn = document.getElementById('admin-btn');
+        if (this.currentUser.isAdmin) {
+            adminBtn.style.display = 'inline-block';
+        } else {
+            adminBtn.style.display = 'none';
+        }
     }
     
     showAuthButtons() {
@@ -273,6 +282,11 @@ class UserManager {
     
     clearAuthForm() {
         document.getElementById('auth-form').reset();
+    }
+    
+    openAdminConsole() {
+        // Open admin console in a new window/tab
+        window.open('admin.html', '_blank');
     }
 }
 

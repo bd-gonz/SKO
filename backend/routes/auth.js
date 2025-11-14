@@ -80,6 +80,7 @@ router.post('/register', registerValidation, async (req, res) => {
                 id: user.id,
                 username: user.username,
                 email: user.email,
+                isAdmin: user.is_admin === 1,
                 stats: {
                     totalGames: user.total_games,
                     totalWins: user.total_wins,
@@ -158,6 +159,7 @@ router.post('/login', loginValidation, async (req, res) => {
                 id: userWithStats.id,
                 username: userWithStats.username,
                 email: userWithStats.email,
+                isAdmin: userWithStats.is_admin === 1,
                 stats: {
                     totalGames: userWithStats.total_games,
                     totalWins: userWithStats.total_wins,
@@ -217,6 +219,7 @@ router.get('/verify', async (req, res) => {
                 id: user.id,
                 username: user.username,
                 email: user.email,
+                isAdmin: user.is_admin === 1,
                 stats: {
                     totalGames: user.total_games,
                     totalWins: user.total_wins,

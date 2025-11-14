@@ -55,7 +55,7 @@ class User {
     static async findById(id) {
         try {
             const [rows] = await pool.query(
-                'SELECT id, username, email, created_at FROM users WHERE id = ?',
+                'SELECT id, username, email, is_admin, created_at FROM users WHERE id = ?',
                 [id]
             );
             return rows[0] || null;
@@ -73,8 +73,8 @@ class User {
     static async getUserWithStats(userId) {
         try {
             const [rows] = await pool.query(`
-                SELECT 
-                    u.id, u.username, u.email, u.created_at,
+                SELECT
+                    u.id, u.username, u.email, u.is_admin, u.created_at,
                     s.total_games, s.total_wins, s.total_losses, s.total_draws,
                     s.current_streak, s.best_streak,
                     s.easy_games, s.easy_wins,
