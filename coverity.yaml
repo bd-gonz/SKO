@@ -1,5 +1,4 @@
 
 capture:
   build:
-    clean-command: cd backend && npm clean
-    build-command: cd backend && npm build
+    build-command: cd backend && npm install
