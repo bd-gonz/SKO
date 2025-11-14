@@ -28,6 +28,7 @@ build/
 # OS files
 Thumbs.db
 desktop.ini
+coverity.yaml
 
 # Test coverage
 coverage/
