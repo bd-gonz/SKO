@@ -17,7 +17,7 @@ class UserManager {
                 this.showAuthButtons();
             }
         } catch (error) {
-            console.log('No valid session found');
+            console.log('No valid session found or backend not available:', error.message);
             this.showAuthButtons();
         }
         
@@ -383,8 +383,11 @@ class TicTacToe {
             return;
         }
         
-        if (this.gameMode === 'human-vs-computer' && this.currentPlayer === 'X') {
-            this.makeMove(index, this.currentPlayer);
+        if (this.gameMode === 'human-vs-computer') {
+            // Only allow human player (X) to click
+            if (this.currentPlayer === 'X') {
+                this.makeMove(index, this.currentPlayer);
+            }
         }
     }
     
@@ -394,9 +397,10 @@ class TicTacToe {
         cell.textContent = player;
         cell.classList.add(player.toLowerCase());
         
-        const winner = this.checkWinner();
-        if (winner) {
-            this.endGame(winner);
+        const winResult = this.checkWinner();
+        if (winResult) {
+            this.highlightWinningCells(winResult.combination);
+            this.endGame(winResult.winner);
             return;
         }
         
@@ -462,7 +466,8 @@ class TicTacToe {
         for (let i = 0; i < 9; i++) {
             if (this.board[i] === '') {
                 this.board[i] = this.currentPlayer;
-                if (this.checkWinner() === this.currentPlayer) {
+                const winResult = this.checkWinner();
+                if (winResult && winResult.winner === this.currentPlayer) {
                     this.board[i] = '';
                     return i;
                 }
@@ -475,7 +480,8 @@ class TicTacToe {
         for (let i = 0; i < 9; i++) {
             if (this.board[i] === '') {
                 this.board[i] = opponent;
-                if (this.checkWinner() === opponent) {
+                const winResult = this.checkWinner();
+                if (winResult && winResult.winner === opponent) {
                     this.board[i] = '';
                     return i;
                 }
@@ -503,8 +509,7 @@ class TicTacToe {
         for (let combination of this.winningCombinations) {
             const [a, b, c] = combination;
             if (this.board[a] && this.board[a] === this.board[b] && this.board[a] === this.board[c]) {
-                this.highlightWinningCells(combination);
-                return this.board[a];
+                return { winner: this.board[a], combination: combination };
             }
         }
         return null;
